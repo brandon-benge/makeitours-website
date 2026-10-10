@@ -112,12 +112,6 @@
             builds its own project virtual environment automatically, but
             needs a system Python already present to create it
           </li>
-          <li>
-            <a href="https://brew.sh" target="_blank" rel="noopener">Homebrew</a>,
-            then <a href="https://opencode.ai/docs/" target="_blank" rel="noopener">OpenCode</a>
-            — only if you want MakeItOurs to run OpenCode locally:
-            <code>brew install anomalyco/tap/opencode</code>
-          </li>
         </ul>
         <div class="muted script-note">
           Prefer one step? Download the
@@ -129,13 +123,21 @@
       </div>
       <div class="card">
         <span class="platform-tag">iPhone &amp; iPad</span>
-        <div>One more GitHub App to install:</div>
+        <div>Nothing more to install:</div>
         <div class="muted">
-          Install
-          <a href="https://github.com/apps/opencode-agent" target="_blank" rel="noopener">OpenCode Agent</a>
-          on the same repository — it runs OpenCode inside your repository's
-          GitHub Actions when you submit a request from the app. No local
-          tools, Git, or Python needed on the device itself.
+          Requests you send from iPhone or iPad run in your repository's own
+          GitHub Actions. Your project's MakeItOurs workflow uses the AI
+          provider and key you set in the app, which stores the key as an
+          encrypted repository secret. No local tools, Git, or Python needed
+          on the device itself.
+        </div>
+        <div class="muted">
+          You can also ask from GitHub: open an issue in the repository, or
+          comment <code>/mio</code> (or <code>/makeitours</code>) followed by
+          your request on one. MakeItOurs replies on the issue with the
+          result, and its label shows progress. If the AI needs more
+          information, it asks on the issue — reply with
+          <code>/mio</code> and your answer.
         </div>
       </div>
     </div>
@@ -213,8 +215,9 @@
       This non-subscription option does not use the managed MakeItOurs AI or
       project datastore. You connect the AI provider you trust—OpenAI,
       Anthropic, Google, OpenRouter, Groq, xAI,
-      DeepInfra, Mistral, or OpenCode — using your own API key, stored only
-      on your device, while your project itself lives in a Git repository,
+      DeepInfra, Mistral, or OpenCode — using your own API key, stored on
+      your device (and, for GitHub Actions requests, as an encrypted secret
+      in your repository), while your project itself lives in a Git repository,
       not in the managed service. Within that provider, you also choose the model—
       trade off sophistication against cost per request, and MakeItOurs
       always uses the exact model you picked, never switching on its own.

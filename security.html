@@ -57,12 +57,12 @@
       credential in a query string, where it could end up in a server log.
     </p>
     <p>
-      When MakeItOurs runs OpenCode locally on your Mac, your key is passed to
-      the OpenCode process as an environment variable — never a
-      command-line argument, so it can't leak through a process list. That
-      local control server binds to <code>127.0.0.1</code> only, with a
-      fresh random password generated at every launch; it is never
-      reachable from off your device.
+      On your Mac, MakeItOurs runs its bundled AI agent as a local process
+      and hands your key to it through the process's standard input — never
+      a command-line argument, so it can't leak through a process list. The
+      agent opens no local server or network port. In GitHub Actions, your
+      key reaches your repository's MakeItOurs workflow only as an encrypted
+      repository secret.
     </p>
 
     <h2>GitHub tokens</h2>
