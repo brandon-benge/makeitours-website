@@ -3,7 +3,7 @@
 # MakeItOurs — Mac setup script
 #
 # Installs the command-line tools MakeItOurs needs to manage projects locally:
-# git, Python 3.12 or 3.13, Homebrew, and OpenCode. Safe to re-run — each
+# git, Python 3.12 or 3.13, and Homebrew. Safe to re-run — each
 # step checks what's already installed and skips it.
 #
 # Review this script before running it, then from Terminal:
@@ -87,16 +87,6 @@ done
 if ! $python_ok; then
   info "Installing Python 3.13 via Homebrew — see https://www.python.org/downloads/macos/"
   brew install python@3.13
-fi
-
-# --- OpenCode ----------------------------------------------------------
-
-info "Checking for OpenCode"
-if command -v opencode >/dev/null 2>&1; then
-  ok "OpenCode $(opencode --version)"
-else
-  info "Installing OpenCode via Homebrew — see https://opencode.ai/docs/"
-  brew install anomalyco/tap/opencode
 fi
 
 info "Done. MakeItOurs' Mac runtime dependencies are installed."
