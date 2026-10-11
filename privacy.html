@@ -28,7 +28,7 @@
 <main>
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="muted">Last updated: August 24, 2026 · Benge Software LLC</p>
+    <p class="muted">Last updated: October 11, 2026 · Benge Software LLC</p>
 
     <p>
       MakeItOurs ("the app") is published by Benge Software LLC ("we," "us").
@@ -86,7 +86,7 @@
       Your request and the project content needed to fulfill it are sent
       through our AI gateway to a platform-selected AI provider. We record AI
       prompts and responses for safety, debugging, metering, and service
-      quality. Design-object content may also be converted into embeddings
+      quality; these logs are held in Cloudflare (AI Gateway). Design-object content may also be converted into embeddings
       in a shared search index used to find equivalent objects across
       projects. Index entries retain source-tenant and object metadata so
       they can be identified and removed under our retention processes.
@@ -123,6 +123,37 @@
       project, GitHub credential, or AI key merely because you use this path.
     </p>
 
+    <h2>Images you attach</h2>
+    <p>
+      You can add photos or screenshots to a request to show what you want.
+      Images are optional and are sent only with the request you attach them
+      to. <strong>Images you attach are sent to AI models that may use or
+      train on your data. Don't add anything you aren't comfortable
+      sharing.</strong> The app reminds you of this before you add an image,
+      unless you turn that reminder off in Account Management.
+    </p>
+    <p>
+      Before an image leaves your device, the app removes its metadata,
+      including location, camera and device details, and when it was taken,
+      and it resizes large photos.
+    </p>
+    <h3>Managed subscription</h3>
+    <p>
+      Images go through our AI gateway to a platform-selected AI provider,
+      together with your request. Our service removes metadata again when it
+      receives an image. Images are not saved to your project or your synced
+      project library. An uploaded image that is not used in a request is
+      deleted after 15 minutes, and an image used in a request is deleted
+      within 24 hours. Image requests are turned on only while we have
+      verified an AI model that can read images.
+    </p>
+    <h3>Bring your own infrastructure</h3>
+    <p>
+      Images go from your device or GitHub Actions to the AI provider you
+      selected, together with your request, under that provider's privacy
+      policy. We do not receive them.
+    </p>
+
     <h2>Sensitive and regulated data</h2>
     <p>
       MakeItOurs is not designed to store or process sensitive personal
@@ -142,8 +173,9 @@
       We use service providers to deliver the managed subscription, including
       Cloudflare for request processing, storage, queues, AI routing,
       sandboxed builds, analytics, and previews; a managed source-control
-      service for project history; platform-selected AI providers; Langfuse
-      for AI request tracing; Apple or another provider for subscriptions;
+      service for project history; platform-selected AI providers; Datadog
+      for operational monitoring of request status, errors, and performance;
+      Apple or another provider for subscriptions;
       and Apple CloudKit for syncing your project catalog across devices.
       These providers process data on our behalf or under their own terms as
       applicable. We may also disclose data when required by law, to protect
@@ -157,7 +189,9 @@
       is active and for up to 60 days after it ends, then scheduled for
       deletion. Status, audit, metric, structured-log, and design-embedding
       records are generally retained for up to 90 days. AI prompt and response
-      traces held in Langfuse are generally retained for up to 30 days.
+      logs for the managed subscription are held in Cloudflare (AI Gateway)
+      and expire under its log retention. Images you attach are deleted as
+      described in "Images you attach" above.
       Backups and replicas may take additional time to expire or be purged.
       You may contact us to request access to or deletion of data associated
       with your account, subject to security, legal, and operational
