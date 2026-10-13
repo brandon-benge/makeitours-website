@@ -3,18 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MakeItOurs Roadmap — V2 and what's next</title>
-<meta name="description" content="MakeItOurs V2 and the funding-dependent vision for V3 through V8.">
+<title>MakeItOurs Roadmap — pre-launch and future directions</title>
+<meta name="description" content="MakeItOurs pre-launch priorities and possible future directions for building projects.">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="index.html">
-      <img src="assets/icon.svg" alt="MakeItOurs icon">
-      MakeItOurs
-    </a>
+    <a class="brand" href="index.html"><img src="assets/icon.svg" alt="MakeItOurs icon">MakeItOurs</a>
     <nav class="site">
       <a href="docs/index.html">Docs</a>
       <a href="docs/release-notes/index.html">Release notes</a>
@@ -26,122 +23,37 @@
     </nav>
   </div>
 </header>
-
 <main>
   <div class="wrap">
     <section class="hero">
       <h1>Where MakeItOurs is headed</h1>
-      <p class="tagline">
-        MakeItOurs V2 adds an opt-in managed subscription while preserving
-        the GitHub-based path. Here's what we would love to build next.
-      </p>
+      <p class="tagline">Turn a described or photographed building idea into a model you can inspect, revise, own, and take to the next step.</p>
     </section>
 
     <div class="card">
-      <span class="status-pill future">Heads up</span>
-      <p style="margin: 0;">
-        Everything below V2 is a <strong>direction, not a promise</strong>.
-        It describes what we'd build with real funding and engineering time
-        behind it—not a shipping date. If you'd like to
-        help make it real, say hello on the <a href="support.html">Support
-        page</a>.
-      </p>
+      <strong>Pre-launch status · October 2026</strong>
+      <p class="muted" style="margin: 8px 0 0;">MakeItOurs is being tested on staging with the owner and invited testers. It is not a public customer release. The priorities below are plans, not shipped features or delivery dates. See <a href="docs/release-notes/index.html">release notes</a> for verified releases.</p>
     </div>
 
-    <h2><span class="status-pill today">V2</span><br>Choose managed MakeItOurs or your own GitHub</h2>
-    <p>
-      V2 implements two opt-in paths. Subscribers get a MakeItOurs-managed
-      home for projects, history, previews, AI processing, and builds. There
-      is no AI key to bring and no AI provider to select in this path; the
-      subscription includes the managed AI and build service. Users who do
-      not subscribe can keep GitHub as the source of truth, choose a supported
-      AI provider, supply their own key, and manage their own GitHub Actions.
-      The GitHub path remains available for people who want direct control of
-      their project data and infrastructure, with the tradeoff of additional
-      GitHub workflow latency and operational responsibility.
-    </p>
+    <h2>What is built for staging</h2>
+    <p>The current foundation includes a native iPhone and Mac app, hosted builds, a bring-your-own-GitHub path, a local Mac path, Git-versioned project source, and checks on generated models and files. Building exports include drawings, IFC and volume-based quantities. These are staging capabilities under test, not an offer to start a production account. A checked model is not a structural approval, building-code approval, permit set or materials shopping list.</p>
 
-    <h2><span class="status-pill future">V3</span><br>🎯 Download exactly what you need, nothing you don't</h2>
-    <p>
-      Big projects have lots of moving parts — wiring, framing, structure,
-      finishes. V3's preview would let you check or uncheck exactly the
-      pieces you care about, and generate only those files, on demand.
-      Need just the wiring diagram? That's all you'd have to wait for.
-    </p>
+    <h2>First release priorities · planned</h2>
+    <p>Our proposed starting point is practical residential and small-structure work: decks, pergolas, sheds, fences, gates, slabs, footings, steps, room layouts and simple built-ins. A slab and footing are proposed first proof jobs. We will test whether someone can describe or photograph an idea, clarify it, inspect and revise the model, recover from a failed attempt, and export useful drawings and volume-based quantities.</p>
+    <p>Before inviting outside users, we plan to measure request time and success on fixed jobs, improve the average request time to under two minutes without weakening checks, complete self-serve purchase and access, set pricing and usage limits from measured costs, and run a small pilot. Those outcomes have not been verified. Public feature requests and bugs will use GitHub Issues; sensitive support details should go through <a href="support.html">private support</a>.</p>
 
-    <h2><span class="status-pill future">V4</span><br>🌱 Branch your ideas, not just your code</h2>
-    <p>
-      One good idea often turns into three good options. V4 would let you
-      fork a project into named alternatives, explore each one
-      independently, and always see how they relate back to the original —
-      without juggling duplicate projects or losing track of where an idea
-      came from.
-    </p>
+    <h2>After pilot evidence · planned</h2>
+    <p>We want to add layered building assemblies, material takeoff by purchase unit with waste and optional cost, source-cited building-rule checks, clearer viewer rendering, private project sharing and comments, then opt-in public project discovery and community features. Permit-ready drawing sets need jurisdiction-specific review and qualified oversight before we can promise them. These are possible next steps, not scheduled releases.</p>
 
-    <h2><span class="status-pill future">V5</span><br>✏️ Sketch it, and let AI take a first pass</h2>
-    <p>
-      Sometimes "make the frame two inches wider here" is easier to draw
-      than to type. V5's vision is to let you sketch or mark up a view
-      directly, have AI interpret your intent, and come back with a clear,
-      reviewable proposal for the underlying Python change — never a silent
-      edit. You'd always see exactly what changed and why before accepting it.
-    </p>
-
-    <h2><span class="status-pill future">V6</span><br>🖐️ Direct, hands-on editing — done carefully, not rushed</h2>
-    <p>
-      Drag-and-drop editing is tempting, but it's easy to get wrong for a
-      tool where the underlying design math has to stay correct. Before we
-      build anything like that, V6 commits to researching the options
-      properly — what preserves the real parametric design intent, what's
-      just a nice-looking illusion, and what's actually safe to ship.
-    </p>
-
-    <h2><span class="status-pill future">V7</span><br>MakeItOurs V7 — build from a photo</h2>
-    <p>
-      Sometimes the easiest starting point isn't a description — it's the
-      object itself. V7 imagines pointing your phone at something in the
-      real world and having MakeItOurs break it down into a parametric project:
-      recognizing its shapes, proportions, and materials, then rebuilding it
-      as an editable Python CAD model you can refine, build, and export just
-      like a project you started from scratch.
-    </p>
-
-    <h2><span class="status-pill future">V8</span><br>MakeItOurs V8 — price the path from before to after</h2>
-    <p>
-      Once you can compare where a project is today against where you want
-      it to be, the next question is what that change actually costs. V8
-      imagines comparing a "before" and "after" version of a project to work
-      out exactly which materials are needed to get from one to the other,
-      pricing that materials list, and pulling contractor estimates for the
-      build itself based on your location — turning a design change into a
-      real budget, not just a preview.
-    </p>
+    <h2>Further exploration</h2>
+    <p>Sketch markup, direct model manipulation, alternative design branches, broader photo reconstruction, richer estimating and mechanical parts may be explored later. The current product is not aimed at sculpted shapes, tight-tolerance mechanisms, appearance-led consumer products, or pipe, duct and wiring layouts.</p>
 
     <div class="card">
-      <strong>Want this to happen sooner?</strong>
-      <p class="muted" style="margin: 8px 0 0;">
-        V3 through V8 are a funding-dependent roadmap, not a backlog with a
-        date on it. If you're interested in supporting it—as a customer, an
-        investor, or a collaborator — reach out from the
-        <a href="support.html">Support page</a>.
-      </p>
+      <strong>Help shape the roadmap</strong>
+      <p class="muted" style="margin: 8px 0 0;">Send feature ideas to <a href="mailto:feature@bengesoftwarellc.com">feature@bengesoftwarellc.com</a> or use the <a href="support.html">Support page</a>. We will update this page as testing and release decisions change.</p>
     </div>
   </div>
 </main>
-
-<footer class="site">
-  <div class="wrap">
-    <div class="links">
-      <a href="getting-started.html">Getting Started</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="security.html">Security</a>
-    </div>
-    <div>
-      &copy; 2026 Benge Software LLC ·
-      <a class="business-link" href="https://bengesoftwarellc.com" target="_blank" rel="noopener">bengesoftwarellc.com</a>
-    </div>
-  </div>
-</footer>
+<footer class="site"><div class="wrap"><div class="links"><a href="getting-started.html">Getting Started</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="security.html">Security</a></div><div>&copy; 2026 Benge Software LLC · <a class="business-link" href="https://bengesoftwarellc.com" target="_blank" rel="noopener">bengesoftwarellc.com</a></div></div></footer>
 </body>
 </html>
