@@ -1,0 +1,21 @@
+{
+  "title": "Explore the product workflow",
+  "steps": [
+    {
+      "title": "Describe your idea",
+      "description": "Explain the outcome you want and the constraints that matter."
+    },
+    {
+      "title": "Review the result",
+      "description": "Open the resulting model and inspect its dimensions and details."
+    },
+    {
+      "title": "Refine the design",
+      "description": "Request a change, then review the updated result before proceeding."
+    },
+    {
+      "title": "Use your outputs",
+      "description": "Choose the available drawings and model exports appropriate for your next step."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "audience": "public",
+  "documents": [
+    {
+      "id": "product-workflow",
+      "title": "From idea to inspectable model",
+      "summary": "A guided explanation of the product workflow.",
+      "audience": "public",
+      "status": "needs-review",
+      "updated": "2026-10-12",
+      "version": "V1 planning",
+      "source": "product-workflow.md",
+      "workflow": "product-workflow.json"
+    },
+    {
+      "id": "release-notes",
+      "title": "Release notes",
+      "summary": "Verified release updates will appear here.",
+      "audience": "public",
+      "status": "draft",
+      "updated": "2026-10-12",
+      "version": "V1 planning",
+      "source": "release-notes.md"
+    }
+  ]
+}
