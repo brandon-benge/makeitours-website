@@ -60,3 +60,14 @@ workflow is illustrative, with Play/Pause, Previous/Next and Reset, no autoplay,
 a readable no-JavaScript fallback and reduced-motion styling.
 
 Do not put internal documents or customer support details in this public repo.
+
+## Live roadmap tickets
+
+`roadmap.html` reads public issues from the `makeitours-website` repository at
+view time. A maintainer reviews an issue before applying `publish:roadmap`,
+exactly one `phase:1` or `phase:later`, and one `type:feature` or `type:bug`.
+Its title, open/closed state and canonical GitHub link then appear without a
+website commit. The issue body owns outcome, acceptance criteria and discussion;
+Project fields own private priority and dates. The browser receives no token
+and never requests issue bodies or private Project data. GitHub API errors or
+rate limits show an unavailable message, not an empty finished roadmap.
