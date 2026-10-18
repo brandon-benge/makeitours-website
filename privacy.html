@@ -90,8 +90,17 @@
       prompts and responses for safety, debugging, metering, and service
       quality; these logs are held in Cloudflare (AI Gateway). Design-object content may also be converted into embeddings
       in a shared search index used to find equivalent objects across
-      projects. Index entries retain source-tenant and object metadata so
-      they can be identified and removed under our retention processes.
+      projects. On the hosted service, design objects are shared code: when
+      your request needs an object like one already built in another hosted
+      project, that object's design source may be given to our AI agents and
+      adapted into your project, and your hosted design objects may be reused
+      the same way in other users' projects. Nothing that identifies the
+      project or person an object came from is shared with the other user. A
+      future setting will let you turn this off for your whole account or for
+      one project; doing so stops both sharing those objects and reusing other
+      users' objects. Index entries retain
+      source-tenant and object metadata so they can be identified and removed
+      under our retention processes.
     </p>
 
     <h3>Service records</h3>
