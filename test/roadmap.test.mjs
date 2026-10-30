@@ -31,3 +31,9 @@ test('fails on API errors and never treats a partial paginated result as complet
   const published = await loadRoadmapIssues(async () => ({ ok: true, json: async () => [issue(2)] }));
   assert.equal(published[0].number, 2);
 });
+
+test('parked public work stays identifiable without being closed', () => {
+  const [row] = selectRoadmapIssues([issue(15,['publish:roadmap','phase:later','type:feature','status:parked'])]);
+  assert.equal(row.parked,true);
+  assert.equal(row.state,'open');
+});

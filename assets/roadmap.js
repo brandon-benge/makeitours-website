@@ -18,7 +18,7 @@ export function selectRoadmapIssues(records) {
     const types = ['type:feature', 'type:bug'].filter(label => labels.includes(label));
     if (phases.length !== 1 || types.length !== 1 || seen.has(record.number)) throw new Error('Invalid roadmap classification');
     seen.add(record.number);
-    return [{ number: record.number, title: record.title, url: record.html_url, state: record.state, phase: phases[0], type: types[0] }];
+    return [{ number: record.number, title: record.title, url: record.html_url, state: record.state, phase: phases[0], type: types[0], parked: labels.includes('status:parked') }];
   }).sort((a, b) => (a.phase === b.phase ? a.number - b.number : a.phase === 'phase:1' ? -1 : 1));
 }
 
@@ -47,15 +47,17 @@ if (typeof document !== 'undefined') {
     try {
       const issues = await loadRoadmapIssues();
       const groups = [
-        ['phase:1', 'Before the first outside-user pilot'],
-        ['phase:later', 'After pilot evidence'],
+        [item => item.state === 'open' && !item.parked && item.phase === 'phase:1', 'Pre-pilot public work'],
+        [item => item.state === 'open' && item.parked, 'Parked public work'],
+        [item => item.state === 'open' && !item.parked && item.phase === 'phase:later', 'Other planned public work'],
+        [item => item.state === 'closed', 'Closed public records — not release announcements'],
       ];
       results.replaceChildren();
-      for (const [phase, heading] of groups) {
+      for (const [matches, heading] of groups) {
         const section = document.createElement('section');
         const title = document.createElement('h3'); title.textContent = heading; section.append(title);
         const list = document.createElement('ul'); list.className = 'roadmap-list';
-        for (const issue of issues.filter(item => item.phase === phase)) {
+        for (const issue of issues.filter(matches)) {
           const item = document.createElement('li');
           const link = document.createElement('a'); link.href = issue.url; link.textContent = issue.title; link.rel = 'noopener noreferrer';
           const state = document.createElement('span'); state.className = 'muted'; state.textContent = ` · ${issue.state === 'closed' ? 'Closed' : 'Open'} ${issue.type === 'type:bug' ? 'bug' : 'feature request'}`;
