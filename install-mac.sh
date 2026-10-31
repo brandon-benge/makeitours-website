@@ -41,10 +41,23 @@ fi
 # --- git --------------------------------------------------------------
 
 info "Checking for git"
+# Finding git is not enough: the /usr/bin/git shim exits with an error until
+# the Command Line Tools are installed, so run it before reporting success.
+git_version=""
 if command -v git >/dev/null 2>&1; then
-  ok "git $(git --version | awk '{print $3}')"
+  git_output="$(git --version 2>/dev/null)" || git_output=""
+  if [[ "$git_output" =~ ^git\ version\ ([0-9][^[:space:]]*) ]]; then
+    git_version="${BASH_REMATCH[1]}"
+  fi
+fi
+if [[ -n "$git_version" ]]; then
+  ok "git $git_version"
 else
-  warn "git not found — triggering the Xcode Command Line Tools installer"
+  if command -v git >/dev/null 2>&1; then
+    warn "git is installed but does not run — triggering the Xcode Command Line Tools installer"
+  else
+    warn "git not found — triggering the Xcode Command Line Tools installer"
+  fi
   xcode-select --install || true
   fail "Finish the installer popup, then re-run this script."
   exit 1
