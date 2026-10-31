@@ -30,7 +30,7 @@
 <main>
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="muted">Last updated: October 11, 2026 · Benge Software LLC</p>
+    <p class="muted">Last updated: October 31, 2026 · Benge Software LLC</p>
 
     <p>
       MakeItOurs ("the app") is published by Benge Software LLC ("we," "us").
@@ -88,7 +88,15 @@
       Your request and the project content needed to fulfill it are sent
       through our AI gateway to a platform-selected AI provider. We record AI
       prompts and responses for safety, debugging, metering, and service
-      quality; these logs are held in Cloudflare (AI Gateway). Design-object content may also be converted into embeddings
+      quality. These records are held in Cloudflare, in AI Gateway logs and in
+      our own storage. Separately, we may turn on model-call tracing with
+      LangSmith (a LangChain service) to diagnose problems and improve quality.
+      By default that tracing is off. When it is on, LangSmith receives each
+      AI call's model, provider, token counts, cost, timing, errors, and
+      internal request and account identifiers, but not its content. For
+      limited troubleshooting periods of at most 72 hours at a time, we may
+      also send the prompts and responses of those calls, which include your
+      request and the project content needed to fulfill it. Design-object content may also be converted into embeddings
       in a shared search index used to find equivalent objects across
       projects. On the hosted service, design objects are shared code: when
       your request needs an object like one already built in another hosted
@@ -186,6 +194,8 @@
       sandboxed builds, analytics, and previews; a managed source-control
       service for project history; platform-selected AI providers; Datadog
       for operational monitoring of request status, errors, and performance;
+      LangSmith for model-call tracing when we turn it on, as described in
+      "AI processing and design search";
       Apple or another provider for subscriptions;
       and Apple CloudKit for syncing your project catalog across devices.
       These providers process data on our behalf or under their own terms as
@@ -201,7 +211,10 @@
       deletion. Status, audit, metric, structured-log, and design-embedding
       records are generally retained for up to 90 days. AI prompt and response
       logs for the managed subscription are held in Cloudflare (AI Gateway)
-      and expire under its log retention. Images you attach are deleted as
+      and expire under its log retention. Our own AI call records are deleted
+      automatically: details of each call after up to 14 days, and any stored
+      prompts and responses after up to 72 hours. LangSmith keeps tracing data
+      for up to 14 days. Images you attach are deleted as
       described in "Images you attach" above.
       Backups and replicas may take additional time to expire or be purged.
       You may contact us to request access to or deletion of data associated
