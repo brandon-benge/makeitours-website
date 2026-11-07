@@ -198,7 +198,7 @@
     {
       "id": "sharing",
       "title": "Make it together",
-      "status": "planned",
+      "status": "available",
       "banner": true,
       "byoi": {
         "headline": "One project. One conversation.",
@@ -210,10 +210,10 @@
       },
       "explanation": {
         "gain": "Share a single project, with everyone's messages and context together.",
-        "howTo": "Invite people to a project. Their messages, requests and activity appear together, like a group chat.",
+        "howTo": "Open the project’s ⋯ menu and choose Share…. Invite someone by their MakeItOurs user ID as a viewer or an editor. Everyone sees the same conversation, like a group chat.",
         "vsByoi": "BYOI collaborators share through GitHub access to the repository.",
-        "availability": "Coming soon.",
-        "limits": "Roles, removing access and whose plan is used will be explained when this ships."
+        "availability": "Included with Hosted.",
+        "limits": "Projects are private until you share them. Viewers can look but not change anything; editors can send changes, paid from their own plan. You can change a role or remove someone at any time, and turn on a public link that shows only the project name, its version and the live site."
       }
     },
     {
