@@ -103,3 +103,4 @@ if ! $python_ok; then
 fi
 
 info "Done. MakeItOurs' Mac runtime dependencies are installed."
+info "Compare Hosted and Bring Your Own Infra plans: https://bengesoftwarellc.com/makeitours-website/hosted.html"
