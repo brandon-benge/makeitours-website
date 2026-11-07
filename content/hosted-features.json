@@ -1,0 +1,348 @@
+{
+  "version": 1,
+  "welcome": {
+    "id": "welcome",
+    "headline": "Welcome to MakeItOurs",
+    "body": "Your projects are getting ready."
+  },
+  "byoiCallToAction": "Learn about Hosted",
+  "features": [
+    {
+      "id": "perspective",
+      "title": "Your perspective",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "Keep the angle you love.",
+        "body": "Turn your captured view into images and documents."
+      },
+      "hosted": {
+        "headline": "Keep the angle you love.",
+        "body": "Frame your model, capture the view, then choose your files."
+      },
+      "explanation": {
+        "gain": "Images and documents from the exact view you framed.",
+        "howTo": "Frame the model, choose Capture view, review the picture, then pick the files you want.",
+        "vsByoi": "BYOI opens the documents its last build made. Hosted makes new ones from your current camera angle on request.",
+        "availability": "Included with Hosted.",
+        "limits": "Perspective files show what is on screen. Standard plan and elevation drawings are a separate choice."
+      }
+    },
+    {
+      "id": "elements",
+      "title": "Individual elements",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "Just the part you need.",
+        "body": "Isolate a part and generate documents specifically for it."
+      },
+      "hosted": {
+        "headline": "Just the part you need.",
+        "body": "Isolate an element before capturing your document view."
+      },
+      "explanation": {
+        "gain": "Documents for just the part you care about.",
+        "howTo": "Use Layers or Isolate so only that part is visible, then capture the view and request documents.",
+        "vsByoi": "BYOI documents cover the whole design as built. Hosted generates them for the visible parts.",
+        "availability": "Included with Hosted.",
+        "limits": "What is visible decides what is included. Selecting a part alone does not hide the rest."
+      }
+    },
+    {
+      "id": "drawings",
+      "title": "Focused drawings",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "Drawings with a tighter focus.",
+        "body": "Generate plan, front, side or section drawings of visible parts."
+      },
+      "hosted": {
+        "headline": "Drawings with a tighter focus.",
+        "body": "Choose standard drawing views for the parts you have in view."
+      },
+      "explanation": {
+        "gain": "Plan, front, side and section drawings of the parts in view.",
+        "howTo": "Show the parts you want, open Documents and choose the drawing views.",
+        "vsByoi": "BYOI has the drawings from its last build. Hosted makes new, focused drawings on request.",
+        "availability": "Included with Hosted.",
+        "limits": "Drawings are design aids, not engineering approval or permit documents."
+      }
+    },
+    {
+      "id": "exports",
+      "title": "Subset exports",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "Export the parts that matter.",
+        "body": "Generate STEP, IFC or GLB files for the parts in view."
+      },
+      "hosted": {
+        "headline": "Export the parts that matter.",
+        "body": "Hide what you do not need, then request a model export."
+      },
+      "explanation": {
+        "gain": "STEP, IFC or GLB files for only the parts you need.",
+        "howTo": "Hide what you do not need, open Documents and choose a model export format.",
+        "vsByoi": "BYOI builds these formats for the whole design. Hosted generates them for a chosen subset.",
+        "availability": "Included with Hosted.",
+        "limits": "Exports cover the visible parts in the formats listed."
+      }
+    },
+    {
+      "id": "ai",
+      "title": "Managed AI",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "More creating. Fewer keys.",
+        "body": "Use AI without managing provider API keys."
+      },
+      "hosted": {
+        "headline": "More creating. Fewer keys.",
+        "body": "Your AI provider connection is managed by MakeItOurs."
+      },
+      "explanation": {
+        "gain": "AI that works without provider API keys.",
+        "howTo": "Sign in and start a project. MakeItOurs connects the AI for you.",
+        "vsByoi": "With BYOI you bring and pay for your own AI provider account and keys.",
+        "availability": "Included with Hosted.",
+        "limits": "Your plan's usage limits apply. The models offered can change."
+      }
+    },
+    {
+      "id": "infrastructure",
+      "title": "Infrastructure and performance",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "Your ideas. Our infrastructure.",
+        "body": "Hosted runs your projects and their compute-intensive work."
+      },
+      "hosted": {
+        "headline": "Your ideas. Our infrastructure.",
+        "body": "MakeItOurs manages the hosting and compute behind your projects."
+      },
+      "explanation": {
+        "gain": "Hosting and the compute-heavy work run by MakeItOurs.",
+        "howTo": "Ask for a change. Builds, checks and your project site run on MakeItOurs servers.",
+        "vsByoi": "BYOI runs on your own GitHub and provider accounts, which you set up and look after.",
+        "availability": "Included with Hosted.",
+        "limits": "Build times depend on the change you ask for."
+      }
+    },
+    {
+      "id": "accounts",
+      "title": "A simpler start",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "Start with an idea.",
+        "body": "No GitHub or AI provider account setup needed."
+      },
+      "hosted": {
+        "headline": "Start with an idea.",
+        "body": "Create a Hosted project without setting up developer accounts."
+      },
+      "explanation": {
+        "gain": "Start designing without setting up developer accounts.",
+        "howTo": "Sign in with Apple, choose a plan and create a project.",
+        "vsByoi": "BYOI needs a GitHub account and an AI provider account, which the app helps you connect.",
+        "availability": "Included with Hosted.",
+        "limits": "You still need an Apple ID and a MakeItOurs sign-in."
+      }
+    },
+    {
+      "id": "devices",
+      "title": "One plan, both devices",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "One plan. Wherever you make.",
+        "body": "Your subscription and projects follow you on Mac and iPhone."
+      },
+      "hosted": {
+        "headline": "One plan. Wherever you make.",
+        "body": "Open your projects on Mac or iPhone with the same plan."
+      },
+      "explanation": {
+        "gain": "One plan and the same projects on Mac and iPhone.",
+        "howTo": "Sign in with the same account on both. Use Restore Purchases if a device does not show your plan.",
+        "vsByoi": "BYOI projects also open on both devices through GitHub. Hosted keeps the plan and projects on your account.",
+        "availability": "Included with Hosted.",
+        "limits": "Manage or cancel the plan from your Apple ID subscriptions."
+      }
+    },
+    {
+      "id": "sharing",
+      "title": "Make it together",
+      "status": "planned",
+      "banner": true,
+      "byoi": {
+        "headline": "One project. One conversation.",
+        "body": "Share a project, with messages and context together."
+      },
+      "hosted": {
+        "headline": "One project. One conversation.",
+        "body": "Keep everyone’s ideas, messages and project context together."
+      },
+      "explanation": {
+        "gain": "Share a single project, with everyone's messages and context together.",
+        "howTo": "Invite people to a project. Their messages, requests and activity appear together, like a group chat.",
+        "vsByoi": "BYOI collaborators share through GitHub access to the repository.",
+        "availability": "Coming soon.",
+        "limits": "Roles, removing access and whose plan is used will be explained when this ships."
+      }
+    },
+    {
+      "id": "teamwork",
+      "title": "Safe teamwork",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "Everyone contributes. In order.",
+        "body": "Project changes are applied one at a time to protect your work."
+      },
+      "hosted": {
+        "headline": "Everyone contributes. In order.",
+        "body": "Your team’s changes are applied in sequence, one at a time."
+      },
+      "explanation": {
+        "gain": "Several people can ask for changes without overwriting each other.",
+        "howTo": "Send your request. If someone else's change is running, yours waits its turn and you can see it queued.",
+        "vsByoi": "BYOI changes land in your GitHub repository, where you manage conflicts yourself.",
+        "availability": "Included with Hosted.",
+        "limits": "Changes run one at a time, not as live co-editing. A change that fails leaves earlier work in place."
+      }
+    },
+    {
+      "id": "knowledge",
+      "title": "Shared knowledge retrieval",
+      "status": "planned",
+      "banner": true,
+      "byoi": {
+        "headline": "Find a proven starting point.",
+        "body": "Agents retrieve useful design patterns and code efficiently."
+      },
+      "hosted": {
+        "headline": "Find a proven starting point.",
+        "body": "Shared knowledge helps agents find relevant patterns and code."
+      },
+      "explanation": {
+        "gain": "Agents start from proven design patterns and code.",
+        "howTo": "Nothing to set up. Agents search shared examples while they plan your change.",
+        "vsByoi": "BYOI agents work only from your own project.",
+        "availability": "Coming soon.",
+        "limits": "Only published designs whose owners have not opted out are used. Your designs are not used to train models."
+      },
+      "gate": "example_search"
+    },
+    {
+      "id": "images",
+      "title": "Image-guided design",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "Build from your reference.",
+        "body": "Hosted interprets images, guides planning and checks the result."
+      },
+      "hosted": {
+        "headline": "Build from your reference.",
+        "body": "Attach a reference image to guide planning and model review."
+      },
+      "explanation": {
+        "gain": "A guided workflow that turns a reference image into a design.",
+        "howTo": "Attach a photo or sketch to your request. Hosted plans from it and checks the model against it.",
+        "vsByoi": "BYOI can accept images if your AI provider supports them. Hosted adds the guided planning and checking.",
+        "availability": "Included with Hosted.",
+        "limits": "Some details in an image may not be clear enough to model. You agree to how images are handled before the first upload."
+      }
+    },
+    {
+      "id": "recovery",
+      "title": "Keep making",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "Pick up where you left off.",
+        "body": "Hosted saves progress so interrupted work can continue."
+      },
+      "hosted": {
+        "headline": "Pick up where you left off.",
+        "body": "Saved checkpoints help your work continue after an interruption."
+      },
+      "explanation": {
+        "gain": "Interrupted work picks up from the last saved step.",
+        "howTo": "If a run is cut off or fails, open the request and choose Try again.",
+        "vsByoi": "BYOI retries inside a run, but a run that stops starts over.",
+        "availability": "Included with Hosted.",
+        "limits": "Some failures still need a new request, and retries can use your plan's usage."
+      }
+    },
+    {
+      "id": "versions",
+      "title": "Published versions",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "An earlier version. A fresh start.",
+        "body": "Return to a previously published version of your project."
+      },
+      "hosted": {
+        "headline": "An earlier version. A fresh start.",
+        "body": "Open Versions to review and restore a published version."
+      },
+      "explanation": {
+        "gain": "Go back to an exact earlier published version.",
+        "howTo": "Open Versions, choose one, review it and confirm. Hosted checks and publishes it again.",
+        "vsByoi": "BYOI keeps history in your GitHub repository.",
+        "availability": "Included with Hosted.",
+        "limits": "Very old versions may need a tool update before they can be published again."
+      }
+    },
+    {
+      "id": "updates",
+      "title": "Coordinated tool updates",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "Keep your tools in step.",
+        "body": "Update your project’s CAD tools together in one step."
+      },
+      "hosted": {
+        "headline": "Keep your tools in step.",
+        "body": "Confirm a coordinated update to keep your CAD tools current."
+      },
+      "explanation": {
+        "gain": "Your project's CAD tools kept current in one step.",
+        "howTo": "When an update is offered, review it and confirm. Hosted checks the project with the new tools.",
+        "vsByoi": "BYOI has Upgrade Project, which you run on your own setup.",
+        "availability": "Included with Hosted.",
+        "limits": "Updates never happen without your confirmation. If checks fail, your project stays on its current tools."
+      }
+    },
+    {
+      "id": "monitoring",
+      "title": "Watched for you",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "We keep an eye on the work.",
+        "body": "Failed runs alert the MakeItOurs team to investigate."
+      },
+      "hosted": {
+        "headline": "We keep an eye on the work.",
+        "body": "MakeItOurs receives failure alerts so we can investigate."
+      },
+      "explanation": {
+        "gain": "The MakeItOurs team hears about failed runs.",
+        "howTo": "Nothing to do. When a run fails, the team is alerted and looks into it.",
+        "vsByoi": "With BYOI, failures show in your own GitHub and provider accounts.",
+        "availability": "Included with Hosted.",
+        "limits": "An alert means we look into it. It is not a guaranteed fix or response time."
+      }
+    }
+  ]
+}
