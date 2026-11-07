@@ -1,9 +1,8 @@
 {
   "version": 1,
   "welcome": {
-    "id": "welcome",
-    "headline": "Welcome to MakeItOurs",
-    "body": "Your projects are getting ready."
+    "headline": "Let’s make it yours.",
+    "body": "Welcome to MakeItOurs."
   },
   "byoiCallToAction": "Learn about Hosted",
   "features": [
