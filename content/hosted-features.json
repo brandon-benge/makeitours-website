@@ -49,6 +49,27 @@
       }
     },
     {
+      "id": "mentions",
+      "title": "Point at the exact part",
+      "status": "available",
+      "banner": false,
+      "byoi": {
+        "headline": "Point at the exact part.",
+        "body": "Type @ in Hosted chat to name the element you mean."
+      },
+      "hosted": {
+        "headline": "Point at the exact part.",
+        "body": "Type @ in the message bar and pick the element you mean."
+      },
+      "explanation": {
+        "gain": "Changes go to the exact element you picked, even when several share a name.",
+        "howTo": "Type @ in the message bar, pick the element from the list (its group shows beside the name), then finish your message.",
+        "vsByoi": "BYOI chat finds elements from your description. Hosted sends the element's stable ID and checks it before the change runs.",
+        "availability": "Included with Hosted.",
+        "limits": "You pick from the version on screen. A renamed element is followed by its ID; if it was removed in a newer version, you are asked to pick again."
+      }
+    },
+    {
       "id": "drawings",
       "title": "Focused drawings",
       "status": "available",
