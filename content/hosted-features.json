@@ -52,7 +52,7 @@
       "id": "mentions",
       "title": "Point at the exact part",
       "status": "available",
-      "banner": false,
+      "banner": true,
       "byoi": {
         "headline": "Point at the exact part.",
         "body": "Type @ in Hosted chat to name the element you mean."
