@@ -31,7 +31,7 @@
 <main>
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="muted">Last updated: October 31, 2026 · Benge Software LLC</p>
+    <p class="muted">Last updated: November 9, 2026 · Benge Software LLC</p>
 
     <p>
       MakeItOurs ("the app") is published by Benge Software LLC ("we," "us").
@@ -89,8 +89,7 @@
       Your request and the project content needed to fulfill it are sent
       through our AI gateway to a platform-selected AI provider. We record AI
       prompts and responses for safety, debugging, metering, and service
-      quality. These records are held in Cloudflare, in AI Gateway logs and in
-      our own storage. Separately, we may turn on model-call tracing with
+      quality. These records are held in our own storage at Cloudflare. Separately, we may turn on model-call tracing with
       LangSmith (a LangChain service) to diagnose problems and improve quality.
       By default that tracing is off. When it is on, LangSmith receives each
       AI call's model, provider, token counts, cost, timing, errors, and
@@ -165,7 +164,11 @@
       project library. An uploaded image that is not used in a request is
       deleted after 15 minutes, and an image used in a request is deleted
       within 24 hours. Image requests are turned on only while we have
-      verified an AI model that can read images.
+      verified an AI model that can read images. The one exception: while we
+      check how faithfully models follow photos, we may keep the photos from
+      a request, the render they were compared with, and the check's result,
+      for accounts we have chosen for that check. We keep these samples for
+      up to 90 days and use them only to rate that check.
     </p>
     <h3>Bring your own infrastructure</h3>
     <p>
@@ -210,9 +213,7 @@
       Managed project source and history are retained while your subscription
       is active and for up to 60 days after it ends, then scheduled for
       deletion. Status, audit, metric, structured-log, and design-embedding
-      records are generally retained for up to 90 days. AI prompt and response
-      logs for the managed subscription are held in Cloudflare (AI Gateway)
-      and expire under its log retention. Our own AI call records are deleted
+      records are generally retained for up to 90 days. Our own AI call records are deleted
       automatically: details of each call after up to 14 days, and any stored
       prompts and responses after up to 72 hours. LangSmith keeps tracing data
       for up to 14 days. Images you attach are deleted as
