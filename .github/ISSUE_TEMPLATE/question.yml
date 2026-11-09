@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        This is a **public** page. Leave out personal details, account or billing information, security problems and your own designs. For those, email support@bengesoftwarellc.com or use Report a Problem in the app.
+        This is a **public** page. Leave out personal details, account or billing information, security problems and your own designs. For those, email makeitours-support@bengesoftwarellc.com or use Report a Problem in the app.
   - type: dropdown
     id: area
     attributes:

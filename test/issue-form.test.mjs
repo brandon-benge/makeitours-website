@@ -23,5 +23,5 @@ test("every form requires Area, Platform, App version and a description, and war
   }
   const config = readFileSync(new URL("../.github/ISSUE_TEMPLATE/config.yml", import.meta.url), "utf8");
   assert.match(config, /blank_issues_enabled: false/);
-  assert.match(config, /support@bengesoftwarellc\.com/);
+  assert.match(config, /makeitours-support@bengesoftwarellc\.com/);
 });
