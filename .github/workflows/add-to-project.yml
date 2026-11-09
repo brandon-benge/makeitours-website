@@ -1,0 +1,35 @@
+# D157 (makeitours#92): every new public issue lands on the owner's MakeItOurs Project #2 with
+# Source = Public issue and the Type, Area and Platform the issue form required. The issue stays
+# public here. The token (PROJECT_REPORTS_TOKEN) can only edit the owner's projects.
+name: Add new issues to Project #2
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: add-to-project-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  add:
+    if: github.event.issue.user.type != 'Bot' && github.event.issue.user.login != 'brandon-benge'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts/add-issue-to-project.mjs
+            scripts/issue-form.mjs
+          sparse-checkout-cone-mode: false
+      - name: Add to Project #2 and set its fields
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROJECT_REPORTS_TOKEN }}
+          ISSUE_NODE_ID: ${{ github.event.issue.node_id }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_LABELS: ${{ toJSON(github.event.issue.labels.*.name) }}
+        run: node scripts/add-issue-to-project.mjs

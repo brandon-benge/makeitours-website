@@ -32,7 +32,7 @@ test('the page sells nothing and states no prices', () => {
   assert.doesNotMatch(page, /unlimited/i);
   assert.match(page, /through the App Store/);
   const emails = page.match(/[\w.+-]+@[\w.-]+/g) ?? [];
-  assert.deepEqual([...new Set(emails)], ['support@bengesoftwarellc.com']);
+  assert.deepEqual([...new Set(emails)], ['makeitours-support@bengesoftwarellc.com']);
 });
 
 test('home, Getting Started and every footer link to the Hosted page', () => {
