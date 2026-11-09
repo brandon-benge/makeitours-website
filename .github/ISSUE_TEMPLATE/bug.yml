@@ -1,0 +1,45 @@
+name: Something isn't working
+description: Report a bug that's safe to share publicly.
+labels: ["type:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a **public** page. Leave out personal details, account or billing information, security problems and your own designs. For those, email support@bengesoftwarellc.com or use Report a Problem in the app.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: What were you doing? This decides who looks at it.
+      options:
+        - Making or changing a design
+        - Viewing the model drawings or exports
+        - App screens or sign-in
+        - Account subscription or sharing
+        - Something else
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - iPhone
+        - Mac
+        - Not app-specific
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+      description: Account Management shows it at the bottom. Write "n/a" if this isn't about the app.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened, and what did you expect?
+      description: Steps to reproduce help a lot.
+    validations:
+      required: true
