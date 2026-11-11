@@ -1,0 +1,109 @@
+{
+  "byoiOverview": {
+    "video": "https://films.bengesoftwarellc.com/v1/byoi-overview-cut-04/6d9593b46a9d.mp4",
+    "poster": "https://films.bengesoftwarellc.com/v1/byoi-overview-cut-04/6d9593b46a9d.jpg",
+    "captions": "https://films.bengesoftwarellc.com/v1/byoi-overview-cut-04/6d9593b46a9d.vtt",
+    "seconds": 75.5
+  },
+  "byoiSetup": [
+    {
+      "title": "Create a GitHub account",
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/b05-signup-intro/76fa5ad53e26.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/b05-signup-intro/76fa5ad53e26.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/b05-signup-intro/76fa5ad53e26.vtt",
+        "seconds": 10.0
+      }
+    },
+    {
+      "title": "Verify your email",
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/g-email-verification/b4316f93bbdb.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/g-email-verification/b4316f93bbdb.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/g-email-verification/b4316f93bbdb.vtt",
+        "seconds": 12.0
+      }
+    },
+    {
+      "title": "Turn on two-factor sign-in",
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/b05c-two-factor-scene/aee508ac183d.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/b05c-two-factor-scene/aee508ac183d.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/b05c-two-factor-scene/aee508ac183d.vtt",
+        "seconds": 20.0
+      }
+    },
+    {
+      "title": "Install the MakeItOurs GitHub App",
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/b06-installation/6527c573e30a.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/b06-installation/6527c573e30a.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/b06-installation/6527c573e30a.vtt",
+        "seconds": 16.0
+      }
+    },
+    {
+      "title": "Choose what it can access",
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/b06b-repo-access-later/0a744a8dffa6.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/b06b-repo-access-later/0a744a8dffa6.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/b06b-repo-access-later/0a744a8dffa6.vtt",
+        "seconds": 10.0
+      }
+    },
+    {
+      "title": "Sign in on the Mac",
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/g-mac-github-signin/c234818cdaec.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/g-mac-github-signin/c234818cdaec.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/g-mac-github-signin/c234818cdaec.vtt",
+        "seconds": 14.5
+      }
+    },
+    {
+      "title": "Publish from the Mac",
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/g-mac-publish/f414704189e5.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/g-mac-publish/f414704189e5.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/g-mac-publish/f414704189e5.vtt",
+        "seconds": 13.0
+      }
+    },
+    {
+      "title": "Connect your iPhone",
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/b07-phone-connection/3b294d47b4c6.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/b07-phone-connection/3b294d47b4c6.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/b07-phone-connection/3b294d47b4c6.vtt",
+        "seconds": 20.0
+      }
+    },
+    {
+      "title": "Set up AI for remote requests",
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/b09-remote-ai-confirmation/31575df911cd.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/b09-remote-ai-confirmation/31575df911cd.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/b09-remote-ai-confirmation/31575df911cd.vtt",
+        "seconds": 10.0
+      }
+    },
+    {
+      "title": "Change your AI key on the Mac",
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/g-llm-key-mac/790055e750d3.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/g-llm-key-mac/790055e750d3.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/g-llm-key-mac/790055e750d3.vtt",
+        "seconds": 12.0
+      }
+    },
+    {
+      "title": "Change your AI key on iPhone",
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/g-llm-key-phone/b28eaad9d003.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/g-llm-key-phone/b28eaad9d003.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/g-llm-key-phone/b28eaad9d003.vtt",
+        "seconds": 11.5
+      }
+    }
+  ]
+}
