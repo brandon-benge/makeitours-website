@@ -2,6 +2,17 @@
   "audience": "public",
   "documents": [
     {
+      "id": "new-to-github",
+      "title": "New to GitHub?",
+      "summary": "A plain guide to the free GitHub account Bring Your Own Infra uses, what the MakeItOurs App can and can't do, and how to remove it.",
+      "audience": "public",
+      "status": "needs-review",
+      "updated": "2026-11-11",
+      "version": "Staging pilot",
+      "source": "new-to-github.md",
+      "workflow": "new-to-github.json"
+    },
+    {
       "id": "product-workflow",
       "title": "From idea to inspectable model",
       "summary": "A guided explanation of the product workflow.",
