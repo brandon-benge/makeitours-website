@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Materials inventory — MakeItOurs</title><link rel="stylesheet" href="../assets/docs.css"><script type="module" src="../assets/workflow.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="../../index.html">MakeIt<span>O</span>urs</a><nav aria-label="Documentation"><a href="../index.html">Documents</a><a href="../../index.html">Product home</a><a href="../../support.html">Support</a></nav></header>
+<main id="main"><p class="eyebrow">Product documentation</p><h1>Materials inventory</h1><div class="metadata"><span>needs review</span><span>Staging pilot</span><span>Revised 2026-11-11</span></div><article><h2>What's in your design</h2>
+<p>A materials inventory lists the parts your design is made of: each line has a description, a specification, a size, a count or amount, and the part IDs it comes from. It names the exact build it was made from, so you always know which version it describes.</p>
+<p>The list says what the design contains, nothing more. It adds no waste, rounding, stock lengths, suppliers or prices, and it isn't a shopping list, a quote or a purchase order. When the design doesn't say something, such as a grade or the contents of a prehung door, the line marks it <strong>unresolved</strong> instead of guessing.</p>
+<h2>Bring Your Own Infra: the whole design, every build</h2>
+<p>Every successful build writes the inventory for the whole design, as three files in <code>generated/inventory/</code>:</p>
+<ul>
+<li><code>inventory.json</code>, the complete record, used by the viewer and by Hosted,</li>
+<li><code>inventory.csv</code>, for a spreadsheet,</li>
+<li><code>inventory.md</code>, a readable table.</li>
+</ul>
+<p>They also appear with the other downloads on your project's site. If a build fails, the previous inventory stays, together with the rest of the previous build.</p>
+<h2>Hosted: the parts in view</h2>
+<blockquote>
+<p><strong>Hosted does this for you.</strong> Show only the parts you care about, and Hosted makes their materials list from the published build. Nothing is rebuilt and your design doesn't change.</p>
+</blockquote>
+<ol>
+<li>Open your project and show the parts you want, for example one wall.</li>
+<li>Tap the camera, then choose <strong>Materials inventory</strong> under <strong>Materials</strong>.</li>
+<li>Review the request and press <strong>Create Documents</strong>. The files appear under <strong>Documents</strong>.</li>
+</ol>
+<p>A version built before this feature can't make an inventory yet. Ask for any small change to rebuild it, then capture the view again. Nothing is charged for a request that can't be made.</p>
+<h2>Reading the list</h2>
+<ul>
+<li><strong>Count</strong> lines (<code>each</code>) are pieces such as studs, doors or boards. Identical pieces share one line.</li>
+<li><strong>Length</strong>, <strong>area</strong> and <strong>volume</strong> totals add up the parts on that line, in metres, square metres or cubic metres.</li>
+<li><strong>Unresolved</strong> names the details the design doesn't state. Fix them in the design, not in the list.</li>
+<li><strong>Excluded</strong> lists reference lines, groups and anything the design says to leave out, with the reason.</li>
+</ul>
+<h2>Walls with openings</h2>
+<p>Walls built from layers (studs, plates, sheathing, insulation and finish) keep their parts' IDs when you move or widen a window or lengthen the wall. Only the members the change reaches are added or removed, so the inventory follows the design.</p>
+<p>Questions? Write to <a href="mailto:makeitours-support@bengesoftwarellc.com">makeitours-support@bengesoftwarellc.com</a>.</p>
+<section class="workflow" aria-labelledby="flow-title"><p class="eyebrow">Illustrative workflow · not live activity</p><h2 id="flow-title">Get a materials inventory</h2><p>Read each step below, or use the controls to walk through the flow.</p><div class="controls" hidden><button type="button" data-previous>Previous</button><button type="button" data-play>Play</button><button type="button" data-next>Next</button><button type="button" data-reset>Reset</button><span class="flow-status" role="status" aria-live="polite"></span></div><ol class="steps"><li><span class="step-number">1</span><div><h3>Build your design</h3><p>Bring Your Own Infra writes the whole-design inventory on every successful build.</p></div></li><li><span class="step-number">2</span><div><h3>Show the parts you want</h3><p>Hosted: hide what you don&#39;t need so only those parts are in view.</p></div></li><li><span class="step-number">3</span><div><h3>Choose Materials inventory</h3><p>Tap the camera, pick Materials inventory under Materials, then Create Documents.</p></div></li><li><span class="step-number">4</span><div><h3>Check what&#39;s unresolved</h3><p>Each line lists its part IDs. Details the design doesn&#39;t state are marked unresolved, never guessed.</p></div></li></ol><p class="motion-note">Animation starts only when you choose Play. Reduced-motion settings keep step changes immediate.</p></section></article></main><footer>© 2026 Benge Software LLC · <a href="mailto:makeitours-support@bengesoftwarellc.com">Contact support</a></footer></body></html>
