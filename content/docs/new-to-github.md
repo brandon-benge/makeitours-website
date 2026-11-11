@@ -59,6 +59,10 @@ You're always in control. To stop MakeItOurs using GitHub:
 
 Your repositories stay in your account after you remove the app. Nothing is deleted.
 
+## You'll also need an AI key
+
+Bring Your Own Infra also uses your own AI account. If you don't have an AI key yet, [Need an AI key?](https://bengesoftwarellc.com/makeitours-website/docs/ai-key-openrouter/index.html) walks through getting one from OpenRouter, step by step.
+
 ## More help from GitHub
 
 - [Creating an account on GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
