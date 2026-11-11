@@ -208,6 +208,12 @@
         "vsByoi": "With BYOI you pay your AI provider directly for every request.",
         "availability": "Hosted on Mac and iPhone. Subscribers get 60% bonus MPUs with every pack.",
         "limits": "Subscription MPUs are used first and expire when your subscription renews. Pack MPUs never expire. Your plan's per-request and daily limits still apply."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-mpu-packs/be0cb30d7f33.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-mpu-packs/be0cb30d7f33.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-mpu-packs/be0cb30d7f33.vtt",
+        "seconds": 24.5
       }
     },
     {
