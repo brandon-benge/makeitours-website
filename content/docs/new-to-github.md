@@ -2,7 +2,7 @@
 
 Bring Your Own Infra keeps your project in your own GitHub account. If you have never used GitHub, that's fine: you only need a free account and about ten minutes, and you never have to touch code or commands. MakeItOurs does the GitHub work for you after you connect.
 
-Don't want a GitHub account at all? Choose [Hosted](https://bengesoftwarellc.com/makeitours-website/hosted.html) instead. Hosted keeps your projects on MakeItOurs servers and needs no GitHub account and no AI provider key.
+> **Rather skip all this? Hosted takes care of it for you.** No GitHub account and no AI key: sign in with Apple, choose a plan and start your project. Saved versions, builds and the AI are all included. [See what Hosted includes](https://bengesoftwarellc.com/makeitours-website/hosted.html).
 
 ## What GitHub is, and why Bring Your Own Infra uses it
 

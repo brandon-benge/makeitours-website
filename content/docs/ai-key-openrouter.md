@@ -2,7 +2,7 @@
 
 With Bring Your Own Infra, the AI that changes your design runs on your own AI account, so you need an *API key*: a long secret code that lets MakeItOurs use that account for you. If you don't have one, we recommend [OpenRouter](https://openrouter.ai/). One OpenRouter account gives you many AI models, from many companies, under one key and one balance.
 
-Rather not manage an AI account? Choose [Hosted](https://bengesoftwarellc.com/makeitours-website/hosted.html) instead. Hosted includes the AI, so you need no key.
+> **Rather skip all this? Hosted takes care of it for you.** The AI is included, so there's no key to create, no credits to top up and nothing to replace. Hosted needs no GitHub account either. [See what Hosted includes](https://bengesoftwarellc.com/makeitours-website/hosted.html).
 
 ## What it costs
 
