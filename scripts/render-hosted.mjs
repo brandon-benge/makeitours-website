@@ -9,9 +9,20 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const content = JSON.parse(readFileSync(join(root, 'content', 'hosted-features.json'), 'utf8'));
 const escape = text => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 
+// makeitours-app#59: approved films, played only when tapped (preload none).
+// Captions are burned into the picture; the WebVTT track is offered, not forced.
+export const film = (f, label) => f ? `    <figure class="film">
+      <video controls playsinline preload="none" crossorigin="anonymous" poster="${f.poster}" aria-label="${escape(label)}">
+        <source src="${f.video}" type="video/mp4">${f.captions ? `
+        <track kind="captions" srclang="en" label="English" src="${f.captions}">` : ''}
+      </video>
+      <figcaption>${escape(label)} · ${Math.round(f.seconds)} seconds, no sound</figcaption>
+    </figure>
+` : '';
+
 const section = f => `  <section class="card hosted-feature" id="${f.id}">
     <h3>${escape(f.title)}${f.status === 'planned' ? ' <span class="label">Coming soon</span>' : ''}</h3>
-    <p><strong>${escape(f.byoi.headline)}</strong> ${escape(f.byoi.body)}</p>
+${film(f.film, `Film: ${f.title}`)}    <p><strong>${escape(f.byoi.headline)}</strong> ${escape(f.byoi.body)}</p>
     <dl>
       <dt>What you get</dt><dd>${escape(f.explanation.gain)}</dd>
       <dt>How to use it</dt><dd>${escape(f.explanation.howTo)}</dd>
@@ -51,6 +62,7 @@ const html = `<!doctype html>
   <h1>MakeItOurs Hosted</h1>
   <div class="card"><strong>Pre-launch.</strong><p class="muted" style="margin: 8px 0 0;">MakeItOurs is in staging testing. Public accounts are not available yet, and features marked “Coming soon” are not released.</p></div>
 
+${film(content.overviews?.hosted, 'Film: MakeItOurs Hosted overview')}
   <p>MakeItOurs works two ways. With <strong>Bring Your Own Infra (BYOI)</strong>, your projects live in your own GitHub account and use your own AI provider, and the app helps you connect both. BYOI is a capable choice. With <strong>Hosted</strong>, MakeItOurs runs and manages that for you, and adds the features below.</p>
 
   <h2 id="plans">Plans and pricing</h2>
@@ -89,6 +101,7 @@ ${content.features.map(section).join('\n')}
 `;
 
 const target = join(root, 'hosted.html');
+if (process.argv[1] !== fileURLToPath(import.meta.url)) { /* imported for film() */ } else {
 if (process.argv.includes('--check')) {
   if (readFileSync(target, 'utf8') !== html) {
     console.error('hosted.html is out of date: run node scripts/render-hosted.mjs');
@@ -96,4 +109,5 @@ if (process.argv.includes('--check')) {
   }
 } else {
   writeFileSync(target, html);
+}
 }

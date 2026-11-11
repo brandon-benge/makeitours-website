@@ -7,6 +7,33 @@
   "byoiCallToAction": "Learn about Hosted",
   "features": [
     {
+      "id": "sawyer",
+      "title": "Meet Sawyer",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "Meet Sawyer.",
+        "body": "Meet the AI guide that asks questions and follows your Hosted requests."
+      },
+      "hosted": {
+        "headline": "Meet Sawyer.",
+        "body": "Sawyer asks questions and helps oversee your requests."
+      },
+      "explanation": {
+        "gain": "An AI project guide who helps clarify your idea, asks for missing details and follows the agents working on your request.",
+        "howTo": "Describe what you want in your Hosted project's message bar. If Sawyer asks a question, reply in the conversation so the request can continue.",
+        "vsByoi": "Hosted manages the agents and shared project conversation behind Sawyer. BYOI uses your configured AI connection and workflow.",
+        "availability": "Included with Hosted on Mac and iPhone.",
+        "limits": "Sawyer is an AI assistant. Review its questions and results; it can misunderstand and does not replace professional review."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-sawyer/206a4f384159.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-sawyer/206a4f384159.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-sawyer/206a4f384159.vtt",
+        "seconds": 15.0
+      }
+    },
+    {
       "id": "perspective",
       "title": "Your perspective",
       "status": "available",
@@ -46,6 +73,12 @@
         "vsByoi": "BYOI documents cover the whole design as built. Hosted generates them for the visible parts.",
         "availability": "Included with Hosted.",
         "limits": "What is visible decides what is included. Selecting a part alone does not hide the rest."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-elements/3bfd6a58d05c.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-elements/3bfd6a58d05c.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-elements/3bfd6a58d05c.vtt",
+        "seconds": 19.0
       }
     },
     {
@@ -67,6 +100,12 @@
         "vsByoi": "BYOI chat finds elements from your description. Hosted sends the element's stable ID and checks it before the change runs.",
         "availability": "Included with Hosted.",
         "limits": "You pick from the version on screen. A renamed element is followed by its ID; if it was removed in a newer version, you are asked to pick again."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-mentions/1553c49e8309.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-mentions/1553c49e8309.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-mentions/1553c49e8309.vtt",
+        "seconds": 22.0
       }
     },
     {
@@ -88,6 +127,12 @@
         "vsByoi": "BYOI has the drawings from its last build. Hosted makes new, focused drawings on request.",
         "availability": "Included with Hosted.",
         "limits": "Drawings are design aids, not engineering approval or permit documents."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-drawings/94367a2a7d04.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-drawings/94367a2a7d04.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-drawings/94367a2a7d04.vtt",
+        "seconds": 15.0
       }
     },
     {
@@ -109,6 +154,12 @@
         "vsByoi": "BYOI builds these formats for the whole design. Hosted generates them for a chosen subset.",
         "availability": "Included with Hosted.",
         "limits": "Exports cover the visible parts in the formats listed."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-exports/a65896dc312b.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-exports/a65896dc312b.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-exports/a65896dc312b.vtt",
+        "seconds": 14.0
       }
     },
     {
@@ -130,6 +181,12 @@
         "vsByoi": "With BYOI you bring and pay for your own AI provider account and keys.",
         "availability": "Included with Hosted.",
         "limits": "Your plan's usage limits apply. The models offered can change."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-ai/79c66948fe34.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-ai/79c66948fe34.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-ai/79c66948fe34.vtt",
+        "seconds": 15.0
       }
     },
     {
@@ -151,6 +208,12 @@
         "vsByoi": "BYOI runs on your own GitHub and provider accounts, which you set up and look after.",
         "availability": "Included with Hosted.",
         "limits": "Build times depend on the change you ask for."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-infrastructure/1f03f123d658.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-infrastructure/1f03f123d658.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-infrastructure/1f03f123d658.vtt",
+        "seconds": 15.0
       }
     },
     {
@@ -172,6 +235,12 @@
         "vsByoi": "BYOI needs a GitHub account and an AI provider account, which the app helps you connect.",
         "availability": "Included with Hosted.",
         "limits": "You still need an Apple ID and a MakeItOurs sign-in."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-accounts/e27b0d069527.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-accounts/e27b0d069527.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-accounts/e27b0d069527.vtt",
+        "seconds": 15.0
       }
     },
     {
@@ -193,6 +262,12 @@
         "vsByoi": "BYOI projects also open on both devices through GitHub. Hosted keeps the plan and projects on your account.",
         "availability": "Included with Hosted.",
         "limits": "Manage or cancel the plan from your Apple ID subscriptions."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-devices/de4cbb55aed5.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-devices/de4cbb55aed5.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-devices/de4cbb55aed5.vtt",
+        "seconds": 15.0
       }
     },
     {
@@ -214,6 +289,12 @@
         "vsByoi": "BYOI collaborators share through GitHub access to the repository.",
         "availability": "Included with Hosted.",
         "limits": "Projects are private until you share them. Viewers can look but not change anything; editors can send changes, paid from their own plan. You can change a role or remove someone at any time, and turn on a public link that shows only the project name, its version and the live site."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-sharing/fb8561603fe8.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-sharing/fb8561603fe8.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-sharing/fb8561603fe8.vtt",
+        "seconds": 15.0
       }
     },
     {
@@ -235,6 +316,12 @@
         "vsByoi": "BYOI changes land in your GitHub repository, where you manage conflicts yourself.",
         "availability": "Included with Hosted.",
         "limits": "Changes run one at a time, not as live co-editing. A change that fails leaves earlier work in place."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/g-teamwork/e96dc8185226.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/g-teamwork/e96dc8185226.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/g-teamwork/e96dc8185226.vtt",
+        "seconds": 15.0
       }
     },
     {
@@ -278,6 +365,12 @@
         "vsByoi": "BYOI can accept images if your AI provider supports them. Hosted adds the guided planning and checking.",
         "availability": "Included with Hosted.",
         "limits": "Some details in an image may not be clear enough to model. You agree to how images are handled before the first upload."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-images/42c50b5fa4f8.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-images/42c50b5fa4f8.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-images/42c50b5fa4f8.vtt",
+        "seconds": 20.0
       }
     },
     {
@@ -320,6 +413,12 @@
         "vsByoi": "BYOI keeps history in your GitHub repository.",
         "availability": "Included with Hosted.",
         "limits": "Very old versions may need a tool update before they can be published again."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/h07-hosted-versions/79f4f86efdb3.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/h07-hosted-versions/79f4f86efdb3.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/h07-hosted-versions/79f4f86efdb3.vtt",
+        "seconds": 22.0
       }
     },
     {
@@ -341,6 +440,12 @@
         "vsByoi": "BYOI has Upgrade Project, which you run on your own setup.",
         "availability": "Included with Hosted.",
         "limits": "Updates never happen without your confirmation. If checks fail, your project stays on its current tools."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-updates/105394c64740.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-updates/105394c64740.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-updates/105394c64740.vtt",
+        "seconds": 12.5
       }
     },
     {
@@ -364,5 +469,19 @@
         "limits": "An alert means we look into it. It is not a guaranteed fix or response time."
       }
     }
-  ]
+  ],
+  "overviews": {
+    "hosted": {
+      "video": "https://films.bengesoftwarellc.com/v1/hosted-overview-cut-03/7f2741f8c7df.mp4",
+      "poster": "https://films.bengesoftwarellc.com/v1/hosted-overview-cut-03/7f2741f8c7df.jpg",
+      "captions": "https://films.bengesoftwarellc.com/v1/hosted-overview-cut-03/7f2741f8c7df.vtt",
+      "seconds": 69.0
+    },
+    "byoi": {
+      "video": "https://films.bengesoftwarellc.com/v1/byoi-overview-cut-04/6d9593b46a9d.mp4",
+      "poster": "https://films.bengesoftwarellc.com/v1/byoi-overview-cut-04/6d9593b46a9d.jpg",
+      "captions": "https://films.bengesoftwarellc.com/v1/byoi-overview-cut-04/6d9593b46a9d.vtt",
+      "seconds": 75.5
+    }
+  }
 }

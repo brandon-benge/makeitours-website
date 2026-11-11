@@ -546,3 +546,10 @@ table.pricing thead th { color: var(--muted); font-weight: 600; font-size: 0.85r
 @media (max-width: 640px) {
   table.pricing th, table.pricing td { padding: 8px 6px; font-size: 0.85rem; }
 }
+
+/* makeitours-app#59/#60: approved walkthrough films, played on tap. */
+figure.film { margin: 12px 0 16px; }
+figure.film video { width: 100%; max-width: 960px; aspect-ratio: 16 / 9; border-radius: 12px; background: #f4f4f2; display: block; }
+figure.film figcaption { font-size: 0.875rem; color: var(--muted, #666); margin-top: 6px; }
+.film-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.film-grid figure.film { margin: 0; }
