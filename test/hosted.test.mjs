@@ -31,9 +31,9 @@ test('the page shows the website#21 launch prices and sells nothing on the site'
   const plans = page.slice(start, page.indexOf('id="features"'));
   for (const row of [
     ['Pro subscription', '2,000', '$20.00 / month', 'Included every month'],
-    ['Pack', '100', '$2.50', '160 MPU (+60 bonus)'],
+    ['Pack', '100', '$2.49', '160 MPU (+60 bonus)'],
     ['Pack', '500', '$10.00', '800 MPU (+300 bonus)'],
-    ['Pack', '1,000', '$17.50', '1,600 MPU (+600 bonus)'],
+    ['Pack', '1,000', '$17.49', '1,600 MPU (+600 bonus)'],
   ]) {
     assert.ok(plans.includes(`<th scope="row">${row[0]}</th><td>${row[1]}</td><td>${row[2]}</td><td>${row[3]}</td>`), row.join(' '));
   }

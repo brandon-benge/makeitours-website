@@ -27,9 +27,9 @@ const section = f => `  <section class="card hosted-feature" id="${f.id}">
 const bonusPercent = 60;
 const plans = [
   { name: 'Pro subscription', mpu: 2000, price: '$20.00 / month', note: 'Included every month' },
-  { name: 'Pack', mpu: 100, price: '$2.50', bonus: true },
+  { name: 'Pack', mpu: 100, price: '$2.49', bonus: true },
   { name: 'Pack', mpu: 500, price: '$10.00', bonus: true },
-  { name: 'Pack', mpu: 1000, price: '$17.50', bonus: true },
+  { name: 'Pack', mpu: 1000, price: '$17.49', bonus: true },
 ];
 const mpu = n => n.toLocaleString('en-US');
 const row = p => `      <tr><th scope="row">${escape(p.name)}</th><td>${mpu(p.mpu)}</td><td>${escape(p.price)}</td><td>${p.bonus ? `${mpu(p.mpu + Math.floor(p.mpu * bonusPercent / 100))} MPU (+${mpu(Math.floor(p.mpu * bonusPercent / 100))} bonus)` : escape(p.note)}</td></tr>`;
