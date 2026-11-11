@@ -26,9 +26,26 @@ test('every feature has its own section anchor and planned ones say coming soon'
   }
 });
 
-test('the page sells nothing and states no prices', () => {
-  assert.match(page, /Pricing coming soon/);
-  assert.doesNotMatch(page, /\$\s?\d/);
+test('the page shows the website#21 launch prices and sells nothing on the site', () => {
+  const start = page.indexOf('id="plans"');
+  const plans = page.slice(start, page.indexOf('id="features"'));
+  for (const row of [
+    ['Pro subscription', '2,000', '$20.00 / month', 'Included every month'],
+    ['Pack', '100', '$2.50', '160 MPU (+60 bonus)'],
+    ['Pack', '500', '$10.00', '800 MPU (+300 bonus)'],
+    ['Pack', '1,000', '$17.50', '1,600 MPU (+600 bonus)'],
+  ]) {
+    assert.ok(plans.includes(`<th scope="row">${row[0]}</th><td>${row[1]}</td><td>${row[2]}</td><td>${row[3]}</td>`), row.join(' '));
+  }
+  assert.match(plans, /60% bonus MPU/);
+  assert.match(plans, /Subscription MPUs are used first and expire when your subscription renews/);
+  assert.match(plans, /Pack MPUs never expire/);
+  assert.match(plans, /no free trial/);
+  assert.match(plans, /usage limits per request and per day still apply/);
+  assert.match(plans, /nothing is on sale yet/);
+  assert.match(plans, /your App Store region may show a different price/);
+  assert.doesNotMatch(page, /Pricing coming soon/);
+  assert.doesNotMatch(page.slice(page.indexOf('id="features"')), /\$\s?\d/);
   assert.doesNotMatch(page, /unlimited/i);
   assert.match(page, /through the App Store/);
   const emails = page.match(/[\w.+-]+@[\w.-]+/g) ?? [];

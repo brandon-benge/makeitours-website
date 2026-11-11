@@ -21,13 +21,26 @@ const section = f => `  <section class="card hosted-feature" id="${f.id}">
     </dl>
   </section>`;
 
+// website#21 launch prices (owner, 2026-11-11). The app shows App Store
+// prices and server-confirmed MPU counts; keep these in step with
+// App Store Connect and the data plane's product catalog.
+const bonusPercent = 60;
+const plans = [
+  { name: 'Pro subscription', mpu: 2000, price: '$20.00 / month', note: 'Included every month' },
+  { name: 'Pack', mpu: 100, price: '$2.50', bonus: true },
+  { name: 'Pack', mpu: 500, price: '$10.00', bonus: true },
+  { name: 'Pack', mpu: 1000, price: '$17.50', bonus: true },
+];
+const mpu = n => n.toLocaleString('en-US');
+const row = p => `      <tr><th scope="row">${escape(p.name)}</th><td>${mpu(p.mpu)}</td><td>${escape(p.price)}</td><td>${p.bonus ? `${mpu(p.mpu + Math.floor(p.mpu * bonusPercent / 100))} MPU (+${mpu(Math.floor(p.mpu * bonusPercent / 100))} bonus)` : escape(p.note)}</td></tr>`;
+
 const html = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MakeItOurs Hosted — what it includes</title>
-<meta name="description" content="What a MakeItOurs Hosted plan includes, how it differs from Bring Your Own Infra, and how to subscribe in the app.">
+<meta name="description" content="What a MakeItOurs Hosted plan includes, how it differs from Bring Your Own Infra, and its prices, and how to subscribe or buy MPUs in the app.">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -41,10 +54,25 @@ const html = `<!doctype html>
   <p>MakeItOurs works two ways. With <strong>Bring Your Own Infra (BYOI)</strong>, your projects live in your own GitHub account and use your own AI provider, and the app helps you connect both. BYOI is a capable choice. With <strong>Hosted</strong>, MakeItOurs runs and manages that for you, and adds the features below.</p>
 
   <h2 id="plans">Plans and pricing</h2>
-  <p><strong>Pricing coming soon.</strong> Plan names, prices and terms will appear here once they match the App Store.</p>
-  <p>Plans are bought in the MakeItOurs app through the App Store, not on this site:</p>
+  <p>Hosted work is paid for in <strong>MakeItOurs Processing Units (MPUs)</strong>. Each change, question or import uses MPUs for the AI and build work it needs. Your MPUs sit in one balance, filled by a Pro subscription, by MPU packs, or both.</p>
+  <p class="muted">These are the launch prices. MakeItOurs is still in staging testing, so nothing is on sale yet. Prices are in US dollars; your App Store region may show a different price.</p>
+  <table class="pricing">
+    <thead><tr><th scope="col">Option</th><th scope="col">MPU</th><th scope="col">Price</th><th scope="col">With Pro</th></tr></thead>
+    <tbody>
+${plans.map(row).join('\n')}
+    </tbody>
+  </table>
   <ul>
-    <li><strong>Subscribe:</strong> open Account Management in the app and choose a plan.</li>
+    <li><strong>No subscription needed.</strong> Anyone can buy a pack and use Hosted with it.</li>
+    <li><strong>Pro subscribers get ${bonusPercent}% bonus MPU</strong> on every pack they buy.</li>
+    <li><strong>Subscription MPUs are used first and expire when your subscription renews.</strong> Unused Pro MPUs do not roll over.</li>
+    <li><strong>Pack MPUs never expire,</strong> including bonus MPUs, and stay yours if you cancel Pro.</li>
+    <li>There is no free trial.</li>
+    <li>Your usage limits per request and per day still apply.</li>
+  </ul>
+  <p>Plans and packs are bought in the MakeItOurs app through the App Store, not on this site:</p>
+  <ul>
+    <li><strong>Subscribe or get MPUs:</strong> open Account Management in the app, then choose Subscribe for Pro or a pack under Get MPUs.</li>
     <li><strong>Restore Purchases:</strong> on a new Mac or iPhone, choose Restore Purchases in Account Management.</li>
     <li><strong>Manage or cancel:</strong> choose Manage Subscription in the app, or use your Apple ID subscriptions.</li>
   </ul>
