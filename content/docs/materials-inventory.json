@@ -1,0 +1,21 @@
+{
+  "title": "Get a materials inventory",
+  "steps": [
+    {
+      "title": "Build your design",
+      "description": "Bring Your Own Infra writes the whole-design inventory on every successful build."
+    },
+    {
+      "title": "Show the parts you want",
+      "description": "Hosted: hide what you don't need so only those parts are in view."
+    },
+    {
+      "title": "Choose Materials inventory",
+      "description": "Tap the camera, pick Materials inventory under Materials, then Create Documents."
+    },
+    {
+      "title": "Check what's unresolved",
+      "description": "Each line lists its part IDs. Details the design doesn't state are marked unresolved, never guessed."
+    }
+  ]
+}

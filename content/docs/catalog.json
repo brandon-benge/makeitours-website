@@ -24,6 +24,17 @@
       "workflow": "ai-key-openrouter.json"
     },
     {
+      "id": "materials-inventory",
+      "title": "Materials inventory",
+      "summary": "What the materials inventory lists, how Bring Your Own Infra writes it on every build, and how Hosted makes one for the parts in view.",
+      "audience": "public",
+      "status": "needs-review",
+      "updated": "2026-11-11",
+      "version": "Staging pilot",
+      "source": "materials-inventory.md",
+      "workflow": "materials-inventory.json"
+    },
+    {
       "id": "product-workflow",
       "title": "From idea to inspectable model",
       "summary": "A guided explanation of the product workflow.",
