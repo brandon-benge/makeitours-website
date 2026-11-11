@@ -366,10 +366,10 @@
       },
       "explanation": {
         "gain": "Agents start from proven design patterns and code.",
-        "howTo": "Nothing to set up. Agents search shared examples while they plan your change.",
+        "howTo": "On by default. Turn it off in Account Management, under Privacy, or for one project in its Share settings. Turning it back on shares from the next published version.",
         "vsByoi": "BYOI agents work only from your own project.",
         "availability": "Coming soon.",
-        "limits": "Only published designs whose owners have not opted out are used. Your designs are not used to train models."
+        "limits": "Only published design code is shared, never names, requests or photos. Off also stops your projects using others' designs. Your designs are not used to train models."
       },
       "gate": "example_search"
     },
