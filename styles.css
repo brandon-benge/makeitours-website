@@ -524,3 +524,25 @@ footer.site .links a { margin-right: 16px; }
   font-weight: 600;
   color: var(--brand) !important;
 }
+
+/* website#21: Hosted pricing table. */
+table.pricing {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 12px 0 16px;
+  font-size: 0.95rem;
+}
+table.pricing th, table.pricing td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+table.pricing tbody tr:last-child th, table.pricing tbody tr:last-child td { border-bottom: 0; }
+table.pricing thead th { color: var(--muted); font-weight: 600; font-size: 0.85rem; }
+@media (max-width: 640px) {
+  table.pricing th, table.pricing td { padding: 8px 6px; font-size: 0.85rem; }
+}
