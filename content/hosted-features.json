@@ -190,6 +190,27 @@
       }
     },
     {
+      "id": "mpu-packs",
+      "title": "MPU packs",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "Pay as you go.",
+        "body": "Buy MPU packs that never expire. No AI provider account needed."
+      },
+      "hosted": {
+        "headline": "Top up anytime.",
+        "body": "Get MPU packs in Account. Pack MPUs never expire."
+      },
+      "explanation": {
+        "gain": "More MPUs when you need them, without changing your plan.",
+        "howTo": "Open Account and choose a pack under Get MPUs. The MPUs arrive as soon as the App Store confirms your purchase.",
+        "vsByoi": "With BYOI you pay your AI provider directly for every request.",
+        "availability": "Hosted on Mac and iPhone. Subscribers get 60% bonus MPUs with every pack.",
+        "limits": "Subscription MPUs are used first and expire when your subscription renews. Pack MPUs never expire. Your plan's per-request and daily limits still apply."
+      }
+    },
+    {
       "id": "infrastructure",
       "title": "Infrastructure and performance",
       "status": "available",
