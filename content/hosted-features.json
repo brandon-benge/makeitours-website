@@ -521,16 +521,16 @@
   ],
   "overviews": {
     "hosted": {
-      "video": "https://films.bengesoftwarellc.com/v1/hosted-overview-cut-03/7f2741f8c7df.mp4",
-      "poster": "https://films.bengesoftwarellc.com/v1/hosted-overview-cut-03/7f2741f8c7df.jpg",
-      "captions": "https://films.bengesoftwarellc.com/v1/hosted-overview-cut-03/7f2741f8c7df.vtt",
-      "seconds": 69.0
+      "video": "https://films.bengesoftwarellc.com/v1/hosted-overview-polish-01/0752a75c2ffe.mp4",
+      "poster": "https://films.bengesoftwarellc.com/v1/hosted-overview-polish-01/0752a75c2ffe.jpg",
+      "captions": "https://films.bengesoftwarellc.com/v1/hosted-overview-polish-01/0752a75c2ffe.vtt",
+      "seconds": 79.2
     },
     "byoi": {
-      "video": "https://films.bengesoftwarellc.com/v1/byoi-overview-cut-04/6d9593b46a9d.mp4",
-      "poster": "https://films.bengesoftwarellc.com/v1/byoi-overview-cut-04/6d9593b46a9d.jpg",
-      "captions": "https://films.bengesoftwarellc.com/v1/byoi-overview-cut-04/6d9593b46a9d.vtt",
-      "seconds": 75.5
+      "video": "https://films.bengesoftwarellc.com/v1/byoi-overview-polish-01/80913ab120ce.mp4",
+      "poster": "https://films.bengesoftwarellc.com/v1/byoi-overview-polish-01/80913ab120ce.jpg",
+      "captions": "https://films.bengesoftwarellc.com/v1/byoi-overview-polish-01/80913ab120ce.vtt",
+      "seconds": 80.0
     }
   }
 }
