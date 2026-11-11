@@ -1,0 +1,38 @@
+{
+  "title": "Get an AI key from OpenRouter",
+  "steps": [
+    {
+      "title": "Create an OpenRouter account",
+      "description": "Open OpenRouter and sign up with your email, Google or GitHub.",
+      "pointer": { "lookFor": "Sign in", "where": "top-right corner of openrouter.ai, then choose to sign up" },
+      "link": { "label": "Open OpenRouter", "url": "https://openrouter.ai/" }
+    },
+    {
+      "title": "Add credits",
+      "description": "Add a small amount to start. Each request uses a little, depending on the model.",
+      "pointer": { "lookFor": "Add Credits", "where": "Settings › Credits" },
+      "link": { "label": "Open the Credits page", "url": "https://openrouter.ai/settings/credits" }
+    },
+    {
+      "title": "Create a key with a limit",
+      "description": "Name it MakeItOurs and set a credit limit so it can never spend more than you choose.",
+      "pointer": { "lookFor": "Create", "where": "Settings › API Keys, the button for a new key" },
+      "link": { "label": "Open the Keys page", "url": "https://openrouter.ai/settings/keys" }
+    },
+    {
+      "title": "Copy the key and keep it private",
+      "description": "Copy it straight away. Treat it like a password and never share it, not even with MakeItOurs support.",
+      "pointer": { "lookFor": "Copy", "where": "beside your new key, shown right after you create it" }
+    },
+    {
+      "title": "Paste it into MakeItOurs",
+      "description": "Mac: project menu, AI Settings…. iPhone: project menu, Set Up Remote AI. Choose OpenRouter and paste the key.",
+      "pointer": { "lookFor": "API key", "where": "AI Settings (Mac) or Remote AI Setup (iPhone), with Provider set to OpenRouter" }
+    },
+    {
+      "title": "Pick a model and save",
+      "description": "Press Fetch Models, choose a model, then save. MakeItOurs is ready to take requests.",
+      "pointer": { "lookFor": "Fetch Models", "where": "under Model, then Save (Mac) or Save Selection (iPhone)" }
+    }
+  ]
+}

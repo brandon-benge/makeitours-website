@@ -29,7 +29,7 @@ export function renderSite(root, audience, shared = false) {
   const md = new MarkdownIt({ html: false, linkify: false, typographer: false });
   // Documents are text. Images/assets and interactive code come only from reviewed templates.
   md.disable('image');
-  md.validateLink = url => /^https:\/\//i.test(url) || /^mailto:(feature|privacy|support|contact)@bengesoftwarellc\.com$/i.test(url) || /^#[a-zA-Z0-9_-]+$/.test(url);
+  md.validateLink = url => /^https:\/\//i.test(url) || /^mailto:(feature|privacy|support|makeitours-support|contact)@bengesoftwarellc\.com$/i.test(url) || /^#[a-zA-Z0-9_-]+$/.test(url);
   const docs = catalog.documents.map(doc => {
     if (!doc || !slug.test(doc.id) || ['assets', 'share', 'index'].includes(doc.id) || seen.has(doc.id)) throw new Error('Invalid or duplicate document ID');
     seen.add(doc.id);
@@ -52,6 +52,8 @@ export function renderSite(root, audience, shared = false) {
 <body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="${escape(homeLink)}">MakeIt<span>O</span>urs</a><nav aria-label="Documentation"><a href="${prefix}index.html">Documents</a><a href="${escape(homeLink)}">${privateSite ? 'Case study' : 'Product home'}</a>${privateSite ? '' : `<a href="${doc ? '../../' : '../'}support.html">Support</a>`}</nav></header>
 <main id="main"><p class="eyebrow">${edition}</p><h1>${escape(title)}</h1>${doc ? `<div class="metadata"><span>${escape(doc.status.replaceAll('-', ' '))}</span><span>${escape(doc.version)}</span><span>Revised ${escape(doc.updated)}</span></div>` : ''}${body}</main><footer>© 2026 Benge Software LLC · ${privateSite ? 'Read-only documentation · Access does not confer approval.' : '<a href="mailto:makeitours-support@bengesoftwarellc.com">Contact support</a>'}</footer></body></html>\n`;
   }
+  // An arrow at the words to look for on screen: illustration, never a real screenshot or sign-in.
+  const pointer = step => step.pointer ? `<p class="pointer"><span class="pointer-arrow" aria-hidden="true">➜</span><span class="pointer-target"><span class="visually-hidden">Look for </span>${escape(step.pointer.lookFor)}</span><span class="pointer-where">${escape(step.pointer.where)}</span></p>` : '';
   const files = new Map();
   const rows = docs.map(doc => `<li class="card"><p class="label">${escape(doc.status.replaceAll('-', ' '))}</p><h2>${doc.source ? `<a href="${doc.id}/index.html">${escape(doc.title)}</a>` : escape(doc.title)}</h2><p>${escape(doc.summary)}</p></li>`).join('\n');
   files.set('index.html', page('Documentation', `<p class="lede">${privateSite ? 'Product thinking, decisions, and launch preparation. Drafts and outstanding work remain visible.' : 'Understand the product, follow its workflow, and see verified release updates.'}</p><ul class="catalog">${rows}</ul>`));
@@ -61,8 +63,12 @@ export function renderSite(root, audience, shared = false) {
       const flow = JSON.parse(safeRead(root, `content/docs/${doc.workflow}`));
       requiredText(flow.title, 'workflow title');
       if (!Array.isArray(flow.steps) || flow.steps.length < 2 || flow.steps.length > 12) throw new Error('Invalid workflow steps');
-      for (const step of flow.steps) { requiredText(step.title, 'step title'); requiredText(step.description, 'step description'); }
-      body += `<section class="workflow" aria-labelledby="flow-title"><p class="eyebrow">Illustrative workflow · not live activity</p><h2 id="flow-title">${escape(flow.title)}</h2><p>Read each step below, or use the controls to walk through the flow.</p><div class="controls" hidden><button type="button" data-previous>Previous</button><button type="button" data-play>Play</button><button type="button" data-next>Next</button><button type="button" data-reset>Reset</button><span class="flow-status" role="status" aria-live="polite"></span></div><ol class="steps">${flow.steps.map((step, i) => `<li><span class="step-number">${i + 1}</span><div><h3>${escape(step.title)}</h3><p>${escape(step.description)}</p></div></li>`).join('')}</ol><p class="motion-note">Animation starts only when you choose Play. Reduced-motion settings keep step changes immediate.</p></section>`;
+      for (const step of flow.steps) {
+        requiredText(step.title, 'step title'); requiredText(step.description, 'step description');
+        if (step.pointer !== undefined) { requiredText(step.pointer?.lookFor, 'pointer label'); requiredText(step.pointer?.where, 'pointer location'); }
+        if (step.link !== undefined) { requiredText(step.link?.label, 'step link label'); if (!/^https:\/\/[^\s"'<>]+$/i.test(requiredText(step.link?.url, 'step link'))) throw new Error('Invalid step link'); }
+      }
+      body += `<section class="workflow" aria-labelledby="flow-title"><p class="eyebrow">Illustrative workflow · not live activity</p><h2 id="flow-title">${escape(flow.title)}</h2><p>Read each step below, or use the controls to walk through the flow.</p><div class="controls" hidden><button type="button" data-previous>Previous</button><button type="button" data-play>Play</button><button type="button" data-next>Next</button><button type="button" data-reset>Reset</button><span class="flow-status" role="status" aria-live="polite"></span></div><ol class="steps">${flow.steps.map((step, i) => `<li><span class="step-number">${i + 1}</span><div><h3>${escape(step.title)}</h3><p>${escape(step.description)}</p>${pointer(step)}${step.link ? `<p class="step-link"><a href="${escape(step.link.url)}" rel="noopener">${escape(step.link.label)}</a></p>` : ''}</div></li>`).join('')}</ol><p class="motion-note">Animation starts only when you choose Play. Reduced-motion settings keep step changes immediate.</p></section>`;
     }
     if (doc.planning) {
       body += `<section data-planning-endpoint="${shared ? '/api/share/docs/planning' : '/api/docs/planning'}" aria-labelledby="planning-title"><h2 id="planning-title">Project schedule</h2><p class="planning-status" role="status">Loading planning data…</p><button type="button" data-refresh>Refresh</button><div class="planning-output"></div></section><script type="module" src="../assets/planning.js"></script>`;

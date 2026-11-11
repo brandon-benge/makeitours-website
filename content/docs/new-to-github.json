@@ -1,0 +1,48 @@
+{
+  "title": "Set up GitHub for MakeItOurs",
+  "steps": [
+    {
+      "title": "Create a free account",
+      "description": "Open GitHub's sign-up page and enter your email, a password and a username. The free plan is enough.",
+      "pointer": { "lookFor": "Create account", "where": "github.com/signup, after your email, password and username" },
+      "link": { "label": "Open GitHub sign-up", "url": "https://github.com/signup" }
+    },
+    {
+      "title": "Verify your email",
+      "description": "GitHub emails you a code. Type it into the sign-up page to finish creating your account.",
+      "pointer": { "lookFor": "Enter code", "where": "the sign-up page, using the code from GitHub's email" }
+    },
+    {
+      "title": "Turn on two-factor sign-in",
+      "description": "Open your profile picture, then Settings, then Password and authentication. Use an authenticator app or a passkey.",
+      "pointer": { "lookFor": "Enable two-factor authentication", "where": "Settings › Password and authentication" },
+      "link": { "label": "GitHub's two-factor help", "url": "https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication" }
+    },
+    {
+      "title": "Keep your recovery codes private",
+      "description": "Download the recovery codes and keep them somewhere safe. Never share them, not even with MakeItOurs support.",
+      "pointer": { "lookFor": "Download", "where": "under “Save your recovery codes”" }
+    },
+    {
+      "title": "Connect GitHub in MakeItOurs",
+      "description": "Press Connect GitHub in the app. Type the one-time code it shows into GitHub's device page, then authorize MakeItOurs.",
+      "pointer": { "lookFor": "Authorize", "where": "github.com/login/device, after you type the app's code" }
+    },
+    {
+      "title": "Install the MakeItOurs App",
+      "description": "When MakeItOurs asks, open the MakeItOurs App on GitHub and choose your account.",
+      "pointer": { "lookFor": "Install", "where": "the MakeItOurs App page on GitHub" },
+      "link": { "label": "Open the MakeItOurs App on GitHub", "url": "https://github.com/apps/makeitours/installations/new" }
+    },
+    {
+      "title": "Choose your repositories",
+      "description": "Pick Only select repositories and choose your MakeItOurs projects. You can change this list or uninstall the app at any time.",
+      "pointer": { "lookFor": "Only select repositories", "where": "the install page, before you press Install" }
+    },
+    {
+      "title": "You're connected",
+      "description": "Back in MakeItOurs, your projects appear. From here on the app saves and builds through GitHub for you.",
+      "pointer": { "lookFor": "Connected", "where": "Account in MakeItOurs" }
+    }
+  ]
+}

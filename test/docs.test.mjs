@@ -104,3 +104,28 @@ test('planning assets are private and select the matching protected endpoint', t
   assert.ok(!shared.get('vision/index.html').includes('data-planning-endpoint="/api/docs/planning"'));
   assert.ok(shared.has('assets/planning.js'));
 });
+
+test('workflow steps render illustrated pointers and https step links, and reject unsafe ones', t => {
+  const { root } = fixture(t);
+  const flow = { title: 'Example', steps: [{ title: 'One', description: 'Start', pointer: { lookFor: 'Sign <up>', where: 'top right' }, link: { label: 'Open', url: 'https://github.com/signup' } }, { title: 'Two', description: 'Finish' }] };
+  const save = () => writeFileSync(join(root, 'content/docs/flow.json'), JSON.stringify(flow));
+  save();
+  const html = renderSite(root, 'public').get('vision/index.html');
+  assert.ok(html.includes('class="pointer"') && html.includes('Sign &lt;up&gt;') && html.includes('top right'));
+  assert.ok(html.includes('aria-hidden="true">➜') && html.includes('Look for </span>'));
+  assert.ok(html.includes('<a href="https://github.com/signup" rel="noopener">Open</a>'));
+  flow.steps[0].link.url = 'javascript:alert(1)'; save();
+  assert.throws(() => renderSite(root, 'public'), /link/);
+  flow.steps[0].link = { label: 'Open', url: 'https://x.test/"onmouseover=' }; save();
+  assert.throws(() => renderSite(root, 'public'), /link/);
+  delete flow.steps[0].link; flow.steps[0].pointer = { lookFor: '' , where: 'x' }; save();
+  assert.throws(() => renderSite(root, 'public'), /pointer/);
+});
+
+test('the support address renders as a mail link', t => {
+  const { root } = fixture(t);
+  writeFileSync(join(root, 'content/docs/vision.md'), '[help](mailto:makeitours-support@bengesoftwarellc.com) [bad](mailto:someone@example.com)');
+  const html = renderSite(root, 'public').get('vision/index.html');
+  assert.ok(html.includes('href="mailto:makeitours-support@bengesoftwarellc.com"'));
+  assert.ok(!html.includes('href="mailto:someone@example.com"'));
+});
