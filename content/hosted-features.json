@@ -163,6 +163,27 @@
       }
     },
     {
+      "id": "inventory",
+      "title": "Materials inventory",
+      "status": "available",
+      "banner": true,
+      "byoi": {
+        "headline": "List just the parts you pick.",
+        "body": "With Hosted, filter the parts in view and get their materials list."
+      },
+      "hosted": {
+        "headline": "Know what goes into it.",
+        "body": "Filter the parts you want, then create their materials list."
+      },
+      "explanation": {
+        "gain": "A readable materials list of just the parts you picked: description, specification, size, count or amount, and the part IDs each line comes from, as Markdown, CSV and JSON.",
+        "howTo": "In the capture view, use the element filter to pick the parts. Choose Materials inventory under Materials, then Create Documents. The files appear under Documents.",
+        "vsByoi": "BYOI writes a list for the whole design in each build's files, but can't make a list of just the parts you pick.",
+        "availability": "Included with Hosted. Versions built before this feature need one rebuild first.",
+        "limits": "Specifications appear only where the design declares them, and nothing is guessed: missing details are marked unresolved. No prices, suppliers or orders."
+      }
+    },
+    {
       "id": "ai",
       "title": "Managed AI",
       "status": "available",

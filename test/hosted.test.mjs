@@ -17,7 +17,7 @@ test('hosted.html is generated from the shared wording', () => {
 });
 
 test('every feature has its own section anchor and planned ones say coming soon', () => {
-  assert.equal(content.features.length, 20);
+  assert.equal(content.features.length, 21);
   for (const feature of content.features) {
     const start = page.indexOf(`id="${feature.id}"`);
     assert.ok(start > 0, `missing #${feature.id}`);
