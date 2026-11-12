@@ -6,13 +6,13 @@ The list says what the design contains, nothing more. It adds no waste, rounding
 
 ## Bring Your Own Infra: the whole design, every build
 
-Every successful build writes the inventory for the whole design, as three files in `generated/inventory/`:
+Every successful build writes the inventory for the whole design, as three files in `generated/inventory/` on the computer that ran the build:
 
 - `inventory.json`, the complete record, used by the viewer and by Hosted,
 - `inventory.csv`, for a spreadsheet,
 - `inventory.md`, a readable table.
 
-They also appear with the other downloads on your project's site. If a build fails, the previous inventory stays, together with the rest of the previous build.
+Like the rest of `generated/`, they are not committed to your repository. After a published build they appear with the other downloads on your project's site, under `artifacts/inventory/`. If a build fails, the previous inventory stays, together with the rest of the previous build.
 
 ## Hosted: the parts in view
 
