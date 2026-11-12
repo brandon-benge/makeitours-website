@@ -371,7 +371,13 @@
         "availability": "Included with Hosted.",
         "limits": "Only published design code is shared, never names, requests or photos. Off also stops your projects using others' designs. Your designs are not used to train models."
       },
-      "gate": "example_search"
+      "gate": "example_search",
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-design-sharing/7c3993874c53.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-design-sharing/7c3993874c53.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-design-sharing/7c3993874c53.vtt",
+        "seconds": 18.5
+      }
     },
     {
       "id": "images",
