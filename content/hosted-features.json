@@ -181,6 +181,12 @@
         "vsByoi": "BYOI writes a list for the whole design in each build's files, but can't make a list of just the parts you pick.",
         "availability": "Included with Hosted. Versions built before this feature need one rebuild first.",
         "limits": "Specifications appear only where the design declares them, and nothing is guessed: missing details are marked unresolved. No prices, suppliers or orders."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-materials-inventory/2a30b609e378.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-materials-inventory/2a30b609e378.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-materials-inventory/2a30b609e378.vtt",
+        "seconds": 11.0
       }
     },
     {

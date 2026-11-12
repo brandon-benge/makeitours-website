@@ -104,6 +104,15 @@
         "captions": "https://films.bengesoftwarellc.com/v1/g-llm-key-phone/b28eaad9d003.vtt",
         "seconds": 11.5
       }
+    },
+    {
+      "title": "Materials inventory in every build",
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/b-materials-inventory/ad0aa5d3111c.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/b-materials-inventory/ad0aa5d3111c.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/b-materials-inventory/ad0aa5d3111c.vtt",
+        "seconds": 10.5
+      }
     }
   ]
 }
