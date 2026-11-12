@@ -424,7 +424,7 @@
     {
       "id": "photoreal-views",
       "title": "Photo-real views",
-      "status": "planned",
+      "status": "available",
       "banner": true,
       "byoi": {
         "headline": "See your design for real.",
@@ -437,8 +437,8 @@
       "explanation": {
         "gain": "Point the camera at your design and Hosted turns that exact view, with your chosen materials, into a photo-real picture in about a minute.",
         "howTo": "Frame the view in the viewer and choose the camera. Pick an outdoor, indoor or studio setting, review the request and create it, then download the ones you like.",
-        "vsByoi": "BYOI on Mac can make a picture with your own AI provider from a standard angle of the whole model. Hosted uses your current view and lets you choose which elements to include.",
-        "availability": "Coming soon to Hosted on Mac and iPhone.",
+        "vsByoi": "BYOI doesn't make pictures yet. Hosted uses your current view, the setting you choose and the elements you include.",
+        "availability": "Included with Hosted on Mac and iPhone. Each picture uses your plan's usage.",
         "limits": "Pictures are AI impressions of your design, not exact renderings. Verify dimensions and suitability for your own use. Pictures are kept for 30 days; download the ones you want to keep."
       },
       "gate": "realistic_images"
