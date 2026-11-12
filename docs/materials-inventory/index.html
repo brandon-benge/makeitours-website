@@ -5,13 +5,13 @@
 <p>A materials inventory lists the parts your design is made of: each line has a description, a specification, a size, a count or amount, and the part IDs it comes from. It names the exact build it was made from, so you always know which version it describes.</p>
 <p>The list says what the design contains, nothing more. It adds no waste, rounding, stock lengths, suppliers or prices, and it isn't a shopping list, a quote or a purchase order. When the design doesn't say something, such as a grade or the contents of a prehung door, the line marks it <strong>unresolved</strong> instead of guessing.</p>
 <h2>Bring Your Own Infra: the whole design, every build</h2>
-<p>Every successful build writes the inventory for the whole design, as three files in <code>generated/inventory/</code>:</p>
+<p>Every successful build writes the inventory for the whole design, as three files in <code>generated/inventory/</code> on the computer that ran the build:</p>
 <ul>
 <li><code>inventory.json</code>, the complete record, used by the viewer and by Hosted,</li>
 <li><code>inventory.csv</code>, for a spreadsheet,</li>
 <li><code>inventory.md</code>, a readable table.</li>
 </ul>
-<p>They also appear with the other downloads on your project's site. If a build fails, the previous inventory stays, together with the rest of the previous build.</p>
+<p>Like the rest of <code>generated/</code>, they are not committed to your repository. After a published build they appear with the other downloads on your project's site, under <code>artifacts/inventory/</code>. If a build fails, the previous inventory stays, together with the rest of the previous build.</p>
 <h2>Hosted: the parts in view</h2>
 <blockquote>
 <p><strong>Hosted does this for you.</strong> Show only the parts you care about, and Hosted makes their materials list from the published build. Nothing is rebuilt and your design doesn't change.</p>
