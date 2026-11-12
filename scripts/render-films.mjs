@@ -14,7 +14,7 @@ const end = '<!-- films:end -->';
 const body = `${start}
   <h2 id="byoi-films">Bring Your Own Infra, step by step</h2>
   <p>These short films show the setup on a demo account. They have no sound; the captions are in the picture.</p>
-${film(films.byoiOverview, 'Film: Bring Your Own Infra overview')}  <div class="film-grid">
+${film(films.byoiOverview, 'Film: Bring Your Own Infra overview', 'overview:byoi')}  <div class="film-grid" data-film-slot="byoi-setup">
 ${films.byoiSetup.map(s => film(s.film, `Film: ${s.title}`)).join('')}  </div>
   ${end}`;
 const before = page.indexOf(start), after = page.indexOf(end);
