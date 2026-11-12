@@ -262,6 +262,12 @@
         "vsByoi": "With BYOI you check usage on your AI provider's own dashboard.",
         "availability": "Hosted on Mac and iPhone. Only you see your own balance and usage.",
         "limits": "Subscription MPUs and pay-as-you-go MPUs are always shown apart. Subscription MPUs are used first. A heads-up appears below 50 MPUs or near a plan limit. Changes that don't finish still show what they used."
+      },
+      "film": {
+        "video": "https://films.bengesoftwarellc.com/v1/f-mpu-balance/49761efa8738.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-mpu-balance/49761efa8738.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-mpu-balance/49761efa8738.vtt",
+        "seconds": 15.5
       }
     },
     {
