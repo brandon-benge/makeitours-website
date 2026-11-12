@@ -354,7 +354,7 @@
     {
       "id": "knowledge",
       "title": "Shared knowledge retrieval",
-      "status": "planned",
+      "status": "available",
       "banner": true,
       "byoi": {
         "headline": "Find a proven starting point.",
@@ -368,7 +368,7 @@
         "gain": "Agents start from proven design patterns and code.",
         "howTo": "On by default. Turn it off in Account Management, under Privacy, or for one project in its Share settings. Turning it back on shares from the next published version.",
         "vsByoi": "BYOI agents work only from your own project.",
-        "availability": "Coming soon.",
+        "availability": "Included with Hosted.",
         "limits": "Only published design code is shared, never names, requests or photos. Off also stops your projects using others' designs. Your designs are not used to train models."
       },
       "gate": "example_search"
