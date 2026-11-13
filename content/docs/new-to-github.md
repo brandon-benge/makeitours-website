@@ -6,13 +6,14 @@ Bring Your Own Infra keeps your project in your own GitHub account. If you have 
 
 ## What GitHub is, and why Bring Your Own Infra uses it
 
-[GitHub](https://github.com/about) is a widely used service, owned by Microsoft, for storing projects and their history. With Bring Your Own Infra, each MakeItOurs project is a private folder on GitHub (GitHub calls it a *repository*). That gives you:
+[GitHub](https://github.com/about) is a widely used service, owned by Microsoft, for storing projects and their history. With Bring Your Own Infra, each MakeItOurs project is a folder on GitHub (GitHub calls it a *repository*). That gives you:
 
 - Every saved version of your design, so you can go back to any earlier one.
 - Your project in an account you own and control, not ours.
 - Builds that run in your own GitHub account when you send a request from your iPhone.
+- A live site for your project, published by GitHub.
 
-**A free GitHub account is enough.** GitHub's [plans page](https://github.com/pricing) lists what the free plan includes. MakeItOurs never asks you to pay GitHub.
+**New projects are public by default, so a free GitHub account can have a live site.** Anyone can see a public project's files and its site, so don't put anything in it you want to keep to yourself. You can choose private instead when you create or publish a project, but a private project needs a paid GitHub plan for a live site. GitHub's [plans page](https://github.com/pricing) lists what each plan includes.
 
 ## What you'll do
 
@@ -35,11 +36,11 @@ GitHub shows the exact permission list on the install page before you approve an
 **It can, only in the repositories you choose:**
 
 - Read and save your project's files and their version history.
-- Create a new private project repository when you start or copy a project.
+- Create a new project repository when you start or copy a project. It's public unless you choose private.
 - Store your AI settings and your AI provider key as an encrypted GitHub secret, so builds can use it. GitHub never shows a stored secret again, even to us.
 - Start and read the builds that run your requests in GitHub Actions.
 - Open and update the request items that track each change.
-- Publish your project's viewer page when you choose to publish it.
+- Turn on GitHub Pages for a new project so its live site appears, and publish your project's viewer page.
 
 **It can't:**
 

@@ -3,7 +3,7 @@
   "steps": [
     {
       "title": "Create a free account",
-      "description": "Open GitHub's sign-up page and enter your email, a password and a username. The free plan is enough.",
+      "description": "Open GitHub's sign-up page and enter your email, a password and a username. A free account can have a live site for public projects.",
       "pointer": { "lookFor": "Create account", "where": "github.com/signup, after your email, password and username" },
       "link": { "label": "Open GitHub sign-up", "url": "https://github.com/signup" }
     },
