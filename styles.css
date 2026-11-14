@@ -553,3 +553,16 @@ figure.film video { width: 100%; max-width: 960px; aspect-ratio: 16 / 9; border-
 figure.film figcaption { font-size: 0.875rem; color: var(--muted, #666); margin-top: 6px; }
 .film-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
 .film-grid figure.film { margin: 0; }
+
+/* makeitours#202: homepage ad, journey films and pricing strip */
+.ad-film { margin: 8px 0 28px; }
+.ad-film figure.film { margin: 0 auto; max-width: 1100px; }
+.ad-film figure.film video { max-width: none; border-radius: 16px; box-shadow: 0 18px 50px rgba(14, 17, 23, 0.25); }
+.journey-films { margin-top: 20px; }
+.journey-film h3 { margin: 0 0 4px; }
+.journey-film p { margin: 0 0 8px; color: var(--muted, #666); min-height: 3em; }
+.price-strip { margin: 40px 0; }
+.price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.price-grid .card h3 { margin-top: 0; }
+.price-grid .price { font-size: 1.75rem; font-weight: 800; margin: 4px 0 8px; }
+.price-grid .price .muted { font-size: 1rem; font-weight: 500; }
