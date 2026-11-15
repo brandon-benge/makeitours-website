@@ -70,7 +70,7 @@ const html = `<!doctype html>
   <div class="card"><strong>Pre-launch.</strong><p class="muted" style="margin: 8px 0 0;">MakeItOurs is in staging testing. Public accounts are not available yet, and features marked “Coming soon” are not released.</p></div>
 
 ${film(content.overviews?.hosted, 'Film: MakeItOurs Hosted overview', 'overview:hosted')}
-  <p>MakeItOurs works two ways. With <strong>Bring Your Own Infra (BYOI)</strong>, your projects live in your own GitHub account and use your own AI provider, and the app helps you connect both. BYOI is a capable choice. With <strong>Hosted</strong>, MakeItOurs runs and manages that for you, and adds the features below.</p>
+  <p>MakeItOurs works two ways. <strong>Hosted</strong> is the easiest way to start: MakeItOurs runs the AI, the builds and the project storage for you, so you need no GitHub account or AI key, and it adds the features below. With <strong>Bring Your Own Infra (BYOI)</strong>, your projects live in your own GitHub account and use your own AI provider, and the app helps you connect both. BYOI is a capable choice. <a href="getting-started.html#compare">Compare the two and see the first steps</a>.</p>
 
   <h2 id="plans">Plans and pricing</h2>
   <p>Hosted work is paid for in <strong>MakeItOurs Processing Units (MPUs)</strong>. Each change, question or import uses MPUs for the AI and build work it needs. Your MPUs sit in one balance, filled by a Pro subscription, by MPU packs, or both.</p>

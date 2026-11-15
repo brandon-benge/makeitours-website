@@ -566,3 +566,16 @@ figure.film figcaption { font-size: 0.875rem; color: var(--muted, #666); margin-
 .price-grid .card h3 { margin-top: 0; }
 .price-grid .price { font-size: 1.75rem; font-weight: 800; margin: 4px 0 8px; }
 .price-grid .price .muted { font-size: 1rem; font-weight: 500; }
+
+/* makeitours-website#45: Hosted-first Getting Started. */
+.status-pill.recommended { vertical-align: middle; margin: 0 0 0 8px; }
+.compare-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.compare-cards .card { margin-bottom: 0; }
+.compare-cards h3 { margin-top: 0; }
+.compare-cards ul { margin: 0; padding-left: 20px; }
+table.compare { margin-bottom: 16px; }
+table.compare tbody th { white-space: nowrap; }
+@media (max-width: 640px) {
+  table.compare tbody th { white-space: normal; }
+}
+.cta-note { text-align: center; margin: 12px 0 0; font-size: 0.95rem; }
