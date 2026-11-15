@@ -366,7 +366,7 @@
       },
       "explanation": {
         "gain": "Share a single project, with everyone's messages and context together.",
-        "howTo": "Open the project’s ⋯ menu and choose Share…. Invite someone by their MakeItOurs user ID as a viewer or an editor. Everyone sees the same conversation, like a group chat.",
+        "howTo": "Open the project’s ⋯ menu and choose Share…. Invite someone by their MakeItOurs user ID as a viewer or an editor. Everyone sees the same conversation, like a group chat. The Sharing page lists everyone you share with and every project shared with you.",
         "vsByoi": "BYOI collaborators share through GitHub access to the repository.",
         "availability": "Included with Hosted.",
         "limits": "Projects are private until you share them. Viewers can look but not change anything; editors can send changes, paid from their own plan. You can change a role or remove someone at any time, and turn on a public link that shows only the project name, its version and the live site."
