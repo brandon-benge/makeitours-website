@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MakeItOurs — describe it, and watch it get built</title>
-<meta name="description" content="MakeItOurs is developing a way to turn building ideas into checked, owned 3D models and drawings. Currently in staging testing.">
+<!-- launch:meta --><meta name="description" content="MakeItOurs is developing a way to turn building ideas into checked, owned 3D models and drawings. Currently in staging testing."><!-- /launch:meta -->
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 <script type="module" src="assets/films.js"></script>
@@ -40,9 +40,9 @@
       <p class="tagline">
         MakeItOurs is being built for homeowners, DIYers, small builders and
         designers who want to turn a building idea into a model they can
-        inspect, revise and own. The staging build produces checked geometry,
+        inspect, revise and own.<!-- launch:hero-status --> The staging build produces checked geometry,
         drawings and export files from versioned project source. It is still
-        under test and has not been released to customers.
+        under test and has not been released to customers.<!-- /launch:hero-status -->
       </p>
       <div class="feature-row">
         <div class="feature-item">
@@ -70,11 +70,14 @@
         ⚙️ Built with parametric Python CAD, versioned in Git.
       </p>
       <div class="cta-row">
-        <a class="btn primary" href="roadmap.html">See the plan</a>
-        <span class="btn secondary" aria-disabled="true">Coming soon to the App Store</span>
-        <a class="btn secondary" href="hosted.html">Compare Hosted plans</a>
-        <a class="btn secondary" href="roadmap.html">See what's coming next</a>
+        <a class="btn primary" href="getting-started.html">Get started</a>
+        <a class="btn secondary" href="hosted.html">See what Hosted includes</a>
       </div>
+      <p class="cta-note muted">
+        Hosted needs the least setup. Prefer your own GitHub and AI
+        provider? <a href="getting-started.html#byoi">Bring Your Own Infra</a>.<!-- launch:hero-note -->
+        Not open to the public yet: <a href="roadmap.html">see the roadmap</a>.<!-- /launch:hero-note -->
+      </p>
     </section>
 
     <section class="ad-film" aria-label="MakeItOurs in 30 seconds">
@@ -86,7 +89,7 @@
     </figure>
     </section>
 
-    <div class="card"><strong>Pre-launch</strong><p class="muted" style="margin: 8px 0 0;">This site shows a product under development. The examples below come from staging and do not mean public accounts or subscriptions are available. <a href="roadmap.html">Read the current roadmap</a> and <a href="docs/release-notes/index.html">verified release notes</a>.</p></div>
+    <!-- launch:status-card --><div class="card"><strong>Pre-launch</strong><p class="muted" style="margin: 8px 0 0;">This site shows a product under development. The examples below come from staging and do not mean public accounts or subscriptions are available. <a href="roadmap.html">Read the current roadmap</a> and <a href="docs/release-notes/index.html">verified release notes</a>.</p></div><!-- /launch:status-card -->
 
     <section class="journey" aria-labelledby="journey-title">
       <p class="eyebrow">See it work</p>
@@ -176,7 +179,7 @@
 
     <section class="price-strip" aria-labelledby="price-title">
       <h2 id="price-title">Pricing</h2>
-      <p class="section-lede">Hosted work is paid for in MakeItOurs Processing Units (MPUs). These are the launch prices; nothing is on sale yet while MakeItOurs is in staging testing.</p>
+      <p class="section-lede">Hosted work is paid for in MakeItOurs Processing Units (MPUs).<!-- launch:price-lede --> These are the launch prices; nothing is on sale yet while MakeItOurs is in staging testing.<!-- /launch:price-lede --></p>
       <div class="price-grid">
         <div class="card"><h3>Pro</h3><p class="price">$20.00 <span class="muted">/ month</span></p><p>2,000 MPU every month, plus 60% bonus MPU on every pack.</p></div>
         <div class="card"><h3>MPU packs</h3><p class="price">from $2.49</p><p>100, 500 or 1,000 MPU. No subscription needed, and pack MPUs never expire.</p></div>
@@ -186,10 +189,10 @@
     </section>
 
     <h2>What you get</h2>
-    <p class="section-lede">
+    <p class="section-lede"><!-- launch:what-you-get -->
       The capabilities being tested in staging. Customer availability and
       supported workflows will be confirmed in release notes.
-    </p>
+<!-- /launch:what-you-get -->    </p>
     <div class="feature-grid">
       <div class="card">
         <h3>💬 Plain language in</h3>
@@ -202,14 +205,14 @@
       <div class="card">
         <h3>📐 Exact, inspectable models</h3>
         <p>
-          Staging builds open in an interactive 3D viewer for inspection and
+          <!-- launch:viewer -->Staging builds open<!-- /launch:viewer --> in an interactive 3D viewer for inspection and
           measurement. Verify dimensions and suitability for your own use.
         </p>
       </div>
       <div class="card">
         <h3>📤 Export to what you already use</h3>
         <p>
-          Staging builds can produce drawings, STEP, IFC4, GLB and data files
+          <!-- launch:exports -->Staging builds can produce<!-- /launch:exports --> drawings, STEP, IFC4, GLB and data files
           for use in other tools. These are not permit-ready drawing sets or
           purchase-unit materials lists.
         </p>
@@ -217,25 +220,26 @@
       <div class="card">
         <h3>🤝 Yours to keep and share</h3>
         <p>
-          Staging projects keep source and history in Git, including an option
+          <!-- launch:source -->Staging projects keep<!-- /launch:source --> source and history in Git, including an option
           to use your own GitHub repository. Hosted projects stay private until
           you share one, with a viewer or an editor, or turn on its public link.
         </p>
       </div>
     </div>
 
-    <h2>Hosted or on your infrastructure · staging options</h2>
+    <h2>Hosted, or bring your own</h2>
     <p>
-      The staging build has a hosted path and a bring-your-own-infrastructure
-      path using your own GitHub and supported AI provider. Self-serve
-      purchase and public onboarding are still planned; the launch prices are
-      <a href="hosted.html#plans">on the Hosted page</a>. See
-      <a href="getting-started.html#byoi">Bring your own infrastructure</a>
-      for that option, <a href="privacy.html">Privacy</a> for what each path
-      stores, or <a href="security.html">Security</a> for how credentials are
-      transported and stored.
+      Hosted needs the least setup: MakeItOurs runs the AI, the
+      builds and the project storage, so you need no GitHub account or AI key.
+      Bring Your Own Infra uses your own GitHub and AI provider for people who
+      want that control. <a href="getting-started.html#compare">Compare the two
+      paths</a>, see <a href="hosted.html#plans">the launch prices</a>,
+      <a href="privacy.html">Privacy</a> for what each path stores, or
+      <a href="security.html">Security</a> for how credentials are transported
+      and stored.<!-- launch:paths-status --> Self-serve purchase and public onboarding are not open yet.<!-- /launch:paths-status -->
     </p>
 
+    <!-- launch:devices -->
     <h2>Mac and iPhone · in testing</h2>
     <p>
       Native Mac and iPhone flows are being tested by the owner on staging.
@@ -250,6 +254,8 @@
         staging and what still needs to happen before outside users can try it.
       </p>
     </div>
+
+    <!-- /launch:devices -->
 
     <h2>From Benge Software LLC</h2>
     <p>
