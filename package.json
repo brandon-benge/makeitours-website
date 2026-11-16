@@ -5,6 +5,7 @@
   "scripts": {
     "docs:build": "node scripts/render-docs.mjs",
     "docs:check": "node scripts/render-docs.mjs --check",
+    "launch:check": "node scripts/render-launch.mjs --check && node scripts/render-hosted.mjs --check && node scripts/render-films.mjs --check",
     "test": "node --test test/*.test.mjs"
   },
   "devDependencies": { "markdown-it": "15.0.2" }

@@ -22,11 +22,12 @@ test('the home page has one primary action, to Getting Started', () => {
   assert.match(html, /Make it yours\. Make it ours\./, 'the ad film stays');
 });
 
-test('Getting Started recommends Hosted before Bring Your Own Infra', () => {
+test('Getting Started lists Hosted first, as the least setup, without calling it the priority', () => {
   const html = main('getting-started.html');
   const hosted = html.indexOf('id="hosted"'), byoi = html.indexOf('id="byoi"');
   assert.ok(hosted > 0 && byoi > hosted);
-  assert.match(html.slice(hosted, hosted + 200), /Recommended/);
+  assert.match(html.slice(hosted, hosted + 200), /least setup/);
+  assert.doesNotMatch(html, /Recommended|recommended|Most people should/);
   assert.match(html, /data-film-slot="overview:hosted"/);
   assert.ok(html.indexOf('data-film-slot="overview:hosted"') < byoi);
   assert.match(html, /id="compare"[\s\S]*<table class="pricing compare">/);
@@ -52,9 +53,9 @@ test('Getting Started links each answer where the question comes up', () => {
   assert.deepEqual([...emails].sort(), ['feature@bengesoftwarellc.com', 'makeitours-support@bengesoftwarellc.com']);
 });
 
-test('the Hosted page recommends Hosted and links the comparison', () => {
+test('the Hosted page explains Hosted as the least setup and links the comparison', () => {
   const html = main('hosted.html');
-  assert.match(html, /<strong>Hosted<\/strong> is the easiest way to start/);
+  assert.match(html, /<strong>Hosted<\/strong> needs the least setup/);
   assert.match(html, /BYOI is a capable choice/);
   assert.match(html, /href="getting-started.html#compare"/);
 });

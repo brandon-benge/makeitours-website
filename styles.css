@@ -568,7 +568,6 @@ figure.film figcaption { font-size: 0.875rem; color: var(--muted, #666); margin-
 .price-grid .price .muted { font-size: 1rem; font-weight: 500; }
 
 /* makeitours-website#45: Hosted-first Getting Started. */
-.status-pill.recommended { vertical-align: middle; margin: 0 0 0 8px; }
 .compare-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
 .compare-cards .card { margin-bottom: 0; }
 .compare-cards h3 { margin-top: 0; }

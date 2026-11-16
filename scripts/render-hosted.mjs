@@ -4,9 +4,11 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { launchCopy, readLaunch } from './launch.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const content = JSON.parse(readFileSync(join(root, 'content', 'hosted-features.json'), 'utf8'));
+const launchText = launchCopy(readLaunch());
 const escape = text => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 
 // makeitours-app#59: approved films, played only when tapped (preload none).
@@ -67,14 +69,13 @@ const html = `<!doctype html>
 <header class="site"><div class="wrap"><a class="brand" href="index.html"><img src="assets/icon.svg" alt="MakeItOurs icon">MakeItOurs</a><nav class="site"><a href="docs/index.html">Docs</a><a href="docs/release-notes/index.html">Release notes</a><a href="getting-started.html">Getting Started</a><a href="hosted.html">Hosted</a><a href="roadmap.html">Roadmap</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="security.html">Security</a></nav></div></header>
 <main><div class="wrap">
   <h1>MakeItOurs Hosted</h1>
-  <div class="card"><strong>Pre-launch.</strong><p class="muted" style="margin: 8px 0 0;">MakeItOurs is in staging testing. Public accounts are not available yet, and features marked “Coming soon” are not released.</p></div>
-
+${launchText['hosted-status-card']}
 ${film(content.overviews?.hosted, 'Film: MakeItOurs Hosted overview', 'overview:hosted')}
-  <p>MakeItOurs works two ways. <strong>Hosted</strong> is the easiest way to start: MakeItOurs runs the AI, the builds and the project storage for you, so you need no GitHub account or AI key, and it adds the features below. With <strong>Bring Your Own Infra (BYOI)</strong>, your projects live in your own GitHub account and use your own AI provider, and the app helps you connect both. BYOI is a capable choice. <a href="getting-started.html#compare">Compare the two and see the first steps</a>.</p>
+  <p>MakeItOurs works two ways. <strong>Hosted</strong> needs the least setup: MakeItOurs runs the AI, the builds and the project storage for you, so you need no GitHub account or AI key, and it adds the features below. With <strong>Bring Your Own Infra (BYOI)</strong>, your projects live in your own GitHub account and use your own AI provider, and the app helps you connect both. BYOI is a capable choice. <a href="getting-started.html#compare">Compare the two and see the first steps</a>.</p>
 
   <h2 id="plans">Plans and pricing</h2>
   <p>Hosted work is paid for in <strong>MakeItOurs Processing Units (MPUs)</strong>. Each change, question or import uses MPUs for the AI and build work it needs. Your MPUs sit in one balance, filled by a Pro subscription, by MPU packs, or both.</p>
-  <p class="muted">These are the launch prices. MakeItOurs is still in staging testing, so nothing is on sale yet. Prices are in US dollars; your App Store region may show a different price.</p>
+  <p class="muted">${launchText['hosted-price-note']}</p>
   <table class="pricing">
     <thead><tr><th scope="col">Option</th><th scope="col">MPU</th><th scope="col">Price</th><th scope="col">With Pro</th></tr></thead>
     <tbody>
@@ -109,7 +110,9 @@ ${content.features.map(section).join('\n')}
 
 const target = join(root, 'hosted.html');
 if (process.argv[1] !== fileURLToPath(import.meta.url)) { /* imported for film() */ } else {
-if (process.argv.includes('--check')) {
+if (process.argv.includes('--stdout')) {
+  process.stdout.write(html);
+} else if (process.argv.includes('--check')) {
   if (readFileSync(target, 'utf8') !== html) {
     console.error('hosted.html is out of date: run node scripts/render-hosted.mjs');
     process.exit(1);
