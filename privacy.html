@@ -31,7 +31,7 @@
 <main>
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="muted">Last updated: November 15, 2026 · Benge Software LLC</p>
+    <p class="muted">Last updated: November 16, 2026 · Benge Software LLC</p>
 
     <p>
       MakeItOurs ("the app") is published by Benge Software LLC ("we," "us").
@@ -84,10 +84,16 @@
       torn down when processing finishes.
     </p>
 
-    <h3>AI processing and design search</h3>
+    <h3 id="ai-processing">AI processing and design search</h3>
     <p>
-      Your request and the project content needed to fulfill it are sent
-      through our AI gateway to a platform-selected AI provider. We record AI
+      Your request, the project content needed to fulfill it, and any images
+      you attach are sent through our AI gateway to OpenRouter, which passes
+      them to the AI model providers we choose. They handle it under their own
+      terms. The app asks for your permission before your first managed
+      request sends anything to these services. If you don't allow it, nothing
+      is sent, and you can still view your projects, versions, and exports and
+      use the bring-your-own-infrastructure option. You can change your answer
+      at any time in Account Management, under Privacy. We record AI
       prompts and responses for safety, debugging, metering, and service
       quality. These records are held in our own storage at Cloudflare. Separately, we may turn on model-call tracing with
       LangSmith (a LangChain service) to diagnose problems and improve quality.
@@ -160,8 +166,8 @@
     </p>
     <h3>Managed subscription</h3>
     <p>
-      Images go through our AI gateway to a platform-selected AI provider,
-      together with your request. Our service removes metadata again when it
+      Images go through our AI gateway to OpenRouter and the AI model
+      providers it passes them to, together with your request. Our service removes metadata again when it
       receives an image. Images are not saved to your project or your synced
       project library. An uploaded image that is not used in a request is
       deleted after 15 minutes, and an image used in a request is deleted
@@ -199,7 +205,8 @@
       We use service providers to deliver the managed subscription, including
       Cloudflare for request processing, storage, queues, AI routing,
       sandboxed builds, analytics, and previews; a managed source-control
-      service for project history; platform-selected AI providers; Datadog
+      service for project history; OpenRouter and the AI model providers it
+      passes requests to; Datadog
       for operational monitoring of request status, errors, and performance;
       LangSmith for model-call tracing when we turn it on, as described in
       "AI processing and design search";
