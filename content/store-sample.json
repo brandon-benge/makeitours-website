@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "sample": true,
+  "note": "makeitours-website#40: sample listings for the store preview, written the way published Hosted designs describe their parts. Phase 2 (#41) swaps in the live catalog with the same fields.",
+  "projects": [
+    {
+      "id": "backyard-play",
+      "name": "Backyard Play Area",
+      "creator": "MakeItOurs Studio",
+      "listed": "2026-11-02",
+      "summary": "A cedar swing set, a covered sandbox and a picnic table on a gravel pad.",
+      "size": "7200 x 5400 x 2400 mm",
+      "picture": "swing",
+      "parts": [
+        { "name": "Swing set", "size": "3600 x 1800 x 2400 mm", "tags": ["A-frame leg", "Beam", "Swing seat", "Cedar", "Steel chain"], "reference": "MIO-3f9a1c07d2be-8c41e2a" },
+        { "name": "Covered sandbox", "size": "1800 x 1800 x 600 mm", "tags": ["Board", "Lid panel", "Hinge", "Cedar"], "reference": "MIO-a71d0e5b9c34-8c41e2a" },
+        { "name": "Picnic table", "size": "1800 x 1500 x 760 mm", "tags": ["Top board", "Bench board", "Cross leg", "Pine"], "reference": "MIO-c2084f6e1a9d-8c41e2a" },
+        { "name": "Gravel pad", "size": "7200 x 5400 x 100 mm", "tags": ["Edging", "Gravel", "Landscape fabric"], "reference": "MIO-5e3b92d0c6f1-8c41e2a" }
+      ]
+    },
+    {
+      "id": "deck-chair",
+      "name": "Deck Chair",
+      "creator": "MakeItOurs Studio",
+      "listed": "2026-11-05",
+      "summary": "A slatted outdoor chair with wide arms and a matching footrest.",
+      "size": "1700 x 760 x 960 mm",
+      "picture": "chair",
+      "parts": [
+        { "name": "Chair", "size": "960 x 760 x 960 mm", "tags": ["Back slat", "Seat slat", "Arm", "Leg", "Cedar"], "reference": "MIO-9b6e4a1f0c72-1d7f3b9" },
+        { "name": "Footrest", "size": "560 x 520 x 380 mm", "tags": ["Slat", "Leg", "Cedar"], "reference": "MIO-e40c7d2b8f15-1d7f3b9" }
+      ]
+    },
+    {
+      "id": "garden-pergola",
+      "name": "Garden Pergola",
+      "creator": "MakeItOurs Studio",
+      "listed": "2026-11-09",
+      "summary": "A four-post pergola with rafters, a built-in bench and planter boxes.",
+      "size": "4200 x 3600 x 2700 mm",
+      "picture": "pergola",
+      "parts": [
+        { "name": "Pergola frame", "size": "3600 x 3000 x 2700 mm", "tags": ["Post", "Beam", "Rafter", "Douglas fir"], "reference": "MIO-71f2c9e0a4b8-6a2e0c4" },
+        { "name": "Built-in bench", "size": "2400 x 450 x 450 mm", "tags": ["Seat board", "Support", "Douglas fir"], "reference": "MIO-0d8a3b6f2e91-6a2e0c4" },
+        { "name": "Planter box", "size": "900 x 450 x 600 mm", "tags": ["Side board", "Liner", "Cedar"], "reference": "MIO-b5c1e7a04d29-6a2e0c4" }
+      ]
+    }
+  ]
+}
