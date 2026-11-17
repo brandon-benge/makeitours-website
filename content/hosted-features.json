@@ -423,7 +423,7 @@
         "howTo": "On by default. Turn it off in Account Management, under Privacy, or for one project in its Share settings. Turning it back on shares from the next published version.",
         "vsByoi": "BYOI agents work only from your own project.",
         "availability": "Included with Hosted.",
-        "limits": "Only published design code is shared, never names, requests or photos. Off also stops your projects using others' designs. Your designs are not used to train models."
+        "limits": "Only published design code is shared with other projects, never requests or photos. While sharing is on, your project's parts can also be listed in the public MakeItOurs Store with the project's name and your display name; off takes them out right away. Off also stops your projects using others' designs. Your designs are not used to train models."
       },
       "gate": "example_search",
       "film": {
