@@ -578,3 +578,43 @@ table.compare tbody th { white-space: nowrap; }
   table.compare tbody th { white-space: normal; }
 }
 .cta-note { text-align: center; margin: 12px 0 0; font-size: 0.95rem; }
+
+/* makeitours-website#40: the store preview. */
+.store-label { display: inline-block; vertical-align: middle; font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: var(--code-bg); color: var(--accent); margin-left: 6px; }
+.store-search { display: flex; flex-direction: column; gap: 6px; margin-bottom: 8px; }
+.store-search label { font-weight: 600; font-size: 0.95rem; }
+.store-search input { font: inherit; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface); color: var(--text); width: 100%; }
+.store-picture { display: block; width: 100%; height: 150px; border-radius: 10px; background: var(--code-bg); margin-bottom: 4px; }
+.store-picture .grid { fill: none; stroke: var(--border); stroke-width: 0.6; }
+.store-picture .line { fill: none; stroke: var(--brand); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.store-picture .thin { fill: none; stroke: var(--brand); stroke-width: 1.5; stroke-linecap: round; }
+.store-picture .accent { fill: none; stroke: var(--accent); stroke-width: 4; stroke-linecap: round; }
+.store-project h3 { margin-top: 12px; }
+.store-project h4 { font-size: 0.95rem; margin: 16px 0 8px; }
+.store-byline { margin-top: 0; font-size: 0.9rem; }
+.store-parts { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.store-part { border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+.store-part-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; }
+.store-part-head .muted { font-size: 0.85rem; }
+.store-tags { list-style: none; padding: 0; margin: 8px 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.store-tags li { font-size: 0.8rem; padding: 2px 9px; border-radius: 999px; background: var(--code-bg); color: var(--muted); }
+.store-part-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.store-ref { font-size: 0.8rem; overflow-wrap: anywhere; }
+.store-copy { padding: 6px 12px; font-size: 0.85rem; cursor: pointer; font-family: inherit; }
+.store-report { background: none; border: none; padding: 0; color: var(--muted); font: inherit; font-size: 0.85rem; text-decoration: underline; cursor: pointer; }
+.store-pages[hidden] { display: none; }
+.store-pages { display: flex; align-items: center; gap: 12px; margin: 8px 0; }
+.store-pages button { font-family: inherit; cursor: pointer; }
+.store-flow { list-style: none; padding: 0; display: grid; gap: 16px; }
+.store-flow h3 { margin-top: 10px; }
+.mock-window { border: 1px solid var(--border); border-radius: 12px; background: var(--bg); padding: 12px; display: grid; gap: 8px; font-size: 0.9rem; }
+.mock-title { font-weight: 600; }
+.mock-field { border: 1px solid var(--brand); border-radius: 8px; padding: 6px 10px; font-family: ui-monospace, Menlo, monospace; font-size: 0.85rem; background: var(--surface); overflow-wrap: anywhere; }
+.mock-field.soft { border-color: var(--border); font-family: inherit; color: var(--muted); }
+.mock-row { display: flex; flex-wrap: wrap; gap: 4px 10px; }
+.mock-row span, .mock-tags { color: var(--muted); }
+.mock-option { padding: 6px 10px; border-radius: 8px; }
+.mock-option.selected { background: var(--surface); border: 1px solid var(--brand); }
+.mock-bubble { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 8px 12px; max-width: 90%; }
+.mock-bubble.you { justify-self: end; background: var(--brand); color: var(--brand-ink); border-color: var(--brand); }
+.mock-done { color: var(--accent); font-weight: 600; }
