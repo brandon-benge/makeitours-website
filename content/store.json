@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "note": "makeitours-website#41: live switches store.html from the sample preview to the live Hosted store at api. Turn it on only with the owner's review, once production serves the store (makeitours-data-plane#391) and the app can use a part (makeitours-app#136).",
+  "live": false,
+  "api": "https://makeitours-api.bengesoftwarellc.com"
+}

@@ -618,3 +618,15 @@ table.compare tbody th { white-space: nowrap; }
 .mock-bubble { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 8px 12px; max-width: 90%; }
 .mock-bubble.you { justify-self: end; background: var(--brand); color: var(--brand-ink); border-color: var(--brand); }
 .mock-done { color: var(--accent); font-weight: 600; }
+/* makeitours-website#41: the live store. */
+.store-open { margin-top: 4px; padding: 6px 12px; font-size: 0.9rem; cursor: pointer; font-family: inherit; }
+.store-part-summary { margin: 6px 0 0; font-size: 0.9rem; }
+#store-more[hidden] { display: none; }
+#store-more { font-family: inherit; cursor: pointer; margin: 8px 0; }
+#store-report-dialog { border: 1px solid var(--border); border-radius: 14px; background: var(--surface); color: var(--text); padding: 20px; width: min(440px, calc(100vw - 32px)); }
+#store-report-dialog::backdrop { background: rgb(0 0 0 / 0.45); }
+#store-report-dialog form { display: grid; gap: 8px; }
+#store-report-dialog h3 { margin: 0; }
+#store-report-dialog select, #store-report-dialog textarea { font: inherit; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg, var(--surface)); color: var(--text); width: 100%; box-sizing: border-box; }
+.store-dialog-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.store-dialog-actions button { font-family: inherit; cursor: pointer; }
