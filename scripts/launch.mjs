@@ -29,8 +29,8 @@ export const launchCopy = ({ state, appStoreUrl }) => {
   const blocks = {
     // index.html
     'meta': pre
-      ? '<meta name="description" content="MakeItOurs is developing a way to turn building ideas into checked, owned 3D models and drawings. Currently in staging testing.">'
-      : '<meta name="description" content="MakeItOurs turns building ideas into checked, owned 3D models and drawings, on Mac and iPhone.">',
+      ? '<meta name="description" content="MakeItOurs is developing a way to turn building and making ideas, from decks to mechanical parts, into checked, owned 3D models and drawings. Currently in staging testing.">'
+      : '<meta name="description" content="MakeItOurs turns building and making ideas, from decks to mechanical parts, into checked, owned 3D models and drawings, on Mac and iPhone.">',
     'hero-status': pre
       ? ` The staging build produces checked geometry,
         drawings and export files from versioned project source. It is still
