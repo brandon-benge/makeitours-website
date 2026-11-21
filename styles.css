@@ -561,6 +561,12 @@ figure.film figcaption { font-size: 0.875rem; color: var(--muted, #666); margin-
 .journey-films { margin-top: 20px; }
 .journey-film h3 { margin: 0 0 4px; }
 .journey-film p { margin: 0 0 8px; color: var(--muted, #666); min-height: 3em; }
+/* makeitours#251: mechanical parts beside the journey films */
+.mechanical-film { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 16px; align-items: center; margin-top: 24px; }
+.mechanical-film h3 { margin: 0 0 4px; }
+.mechanical-film p { margin: 0; color: var(--muted, #666); }
+.mechanical-film figure.film { margin: 0; }
+@media (max-width: 720px) { .mechanical-film { grid-template-columns: 1fr; } }
 .price-strip { margin: 40px 0; }
 .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
 .price-grid .card h3 { margin-top: 0; }
