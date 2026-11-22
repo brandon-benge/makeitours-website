@@ -448,16 +448,16 @@
       },
       "explanation": {
         "gain": "A guided workflow that turns a reference image into a design.",
-        "howTo": "Attach a photo or sketch to your request. Hosted plans from it and checks the model against it.",
+        "howTo": "Attach a photo or sketch to your request. Hosted plans from it and checks the model against it. Keep commenting while it works: comments stay with the picture and run in order until you tap Finished.",
         "vsByoi": "BYOI can accept images if your AI provider supports them. Hosted adds the guided planning and checking.",
         "availability": "Included with Hosted.",
         "limits": "Some details in an image may not be clear enough to model. You agree to how images are handled before the first upload."
       },
       "film": {
-        "video": "https://films.bengesoftwarellc.com/v1/f-images/42c50b5fa4f8.mp4",
-        "poster": "https://films.bengesoftwarellc.com/v1/f-images/42c50b5fa4f8.jpg",
-        "captions": "https://films.bengesoftwarellc.com/v1/f-images/42c50b5fa4f8.vtt",
-        "seconds": 20.0
+        "video": "https://films.bengesoftwarellc.com/v1/f-images/4a9d66422675.mp4",
+        "poster": "https://films.bengesoftwarellc.com/v1/f-images/4a9d66422675.jpg",
+        "captions": "https://films.bengesoftwarellc.com/v1/f-images/4a9d66422675.vtt",
+        "seconds": 35.0
       }
     },
     {
