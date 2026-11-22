@@ -448,7 +448,7 @@
       },
       "explanation": {
         "gain": "A guided workflow that turns a reference image into a design.",
-        "howTo": "Attach a photo or sketch to your request. Hosted plans from it and checks the model against it.",
+        "howTo": "Attach a photo or sketch to your request. Hosted plans from it and checks the model against it. Keep commenting while it works: comments stay with the picture and run in order until you tap Finished.",
         "vsByoi": "BYOI can accept images if your AI provider supports them. Hosted adds the guided planning and checking.",
         "availability": "Included with Hosted.",
         "limits": "Some details in an image may not be clear enough to model. You agree to how images are handled before the first upload."
