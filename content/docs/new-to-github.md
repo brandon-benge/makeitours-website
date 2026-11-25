@@ -19,6 +19,8 @@ Bring Your Own Infra keeps your project in your own GitHub account. If you have 
 
 These are the whole setup. The illustrated walkthrough at the end of this page shows the same steps, with an arrow at the button or words to look for on each screen. GitHub sometimes moves things around, but the names stay the same.
 
+Prefer to watch? The [Bring Your Own Infra films](https://bengesoftwarellc.com/makeitours-website/getting-started.html#byoi-films) show each step on a demo account, from creating a GitHub account to publishing from the Mac. They have no sound; the captions are in the picture.
+
 1. **Create your account** at [github.com/signup](https://github.com/signup). Enter your email, a password and a username. Your username is public, so pick something you're happy for others to see.
 2. **Verify your email.** GitHub emails you a code. Type it into the sign-up page.
 3. **Turn on two-factor sign-in.** This protects your account if your password ever leaks. Open your profile picture, then **Settings**, then **Password and authentication**, and press **Enable two-factor authentication**. GitHub explains it in [Configuring two-factor authentication](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication). An authenticator app or a passkey both work.
